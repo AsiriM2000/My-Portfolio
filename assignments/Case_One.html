@@ -5,17 +5,49 @@
     <title>Basic Web Layout</title>
     <link rel="stylesheet" href="../assets/css/normalize.css">
     <style>
+
         main{
-            border: 1px solid red;
             height: 100vh;
             width: 100vw;
             position: relative;
         }
+
+        main>section{
+            height: 50vh;
+            width: 50vw;
+            position: absolute;
+        }
+
+        main>section:nth-child(1){
+            background-color: red;
+        }
+
+        main>section:nth-child(2){
+            background-color: green;
+            right: 0;
+            top: 0;
+        }
+
+        main>section:nth-child(3){
+            background-color: orange;
+            bottom: 0;
+            left: 0;
+        }
+
+        main>section:nth-child(4){
+            background-color: deeppink;
+            bottom: 0;
+            right: 0;
+        }
+
     </style>
 </head>
 <body>
   <main>
-
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
   </main>
 </body>
 </html>
