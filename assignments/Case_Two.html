@@ -1,98 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Basic Web Layout</title>
-  <link rel="stylesheet" href="../assets/css/normalize.css">
-  <link rel="icon" href="../assets/img/favicon.png">
-  <meta content="width=device-width initial-scale=1" name="viewport">
+    <meta charset="UTF-8">
+    <title>Basic Web Layout</title>
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="icon" href="../assets/img/favicon.png">
+    <meta content="width=device-width initial-scale=1" name="viewport">
 
-  <style>
+    <style>
 
-    * {
-      font-family: 'Poppins', sans-serif;
-    }
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
 
-    header {
-      background: white;
-      position: relative;
-      box-shadow: 0px -1px 8px 2px #1c1717e8;
-      height: 73px;
-    }
+        header {
+            background: white;
+            position: relative;
+            box-shadow: 0px -1px 8px 2px #1c1717e8;
+            height: 73px;
+        }
 
-    header > img {
-      width: 180px;
-      position: relative;
-      top: 20px;
-      left: 10px;
-    }
+        header > img {
+            width: 180px;
+            position: relative;
+            top: 20px;
+            left: 10px;
+        }
 
-    header > nav {
-      position: absolute;
-      top: 0;
-      right: 50px;
-    }
+        header > nav {
+            position: absolute;
+            top: 0;
+            right: 50px;
+        }
 
-    header > nav > ul > li {
-      display: inline-block;
-      padding: 10px;
-      cursor: pointer;
-    }
+        header > nav > ul > li {
+            display: inline-block;
+            padding: 10px;
+            cursor: pointer;
+        }
 
-    .sidebar {
-      position: absolute;
-      width: 260px;
-      height: 100vh;
-      background: #470784;
+        main{
+            position: relative;
+        }
+        main>nav{
+            position: absolute;
+            width: 270px;
+            background: blueviolet;
+            top: 0;
+            bottom: 0;
+        }
 
-    }
+        main>section{
+            margin-left: 300px;
+            padding: 5px;
+        }
 
-    .sidebar>ul>li{
-      list-style: none;
-    }
+        footer{
+            height: 50px;
+            background: dimgray;
+        }
 
-    .sidebar>ul>li>div{
-      color: white;
-      width: 100%;
-      height: 40px;
-      display: flex;
-      align-items: center;
-    }
+        footer>h2{
+            text-align: center;
+            color: white;
+        }
+        main>nav> ul > li {
+            list-style: none;
+        }
 
-  </style>
+        main>nav> ul > li {
+            color: white;
+            width: 100%;
+            height: 40px;
+            display: flex;
+            align-items: center;
+        }
+
+    </style>
 </head>
 <body>
 <header>
-  <img src="../assets/img/favicon.png">
-  <nav>
-    <ul>
-      <li>Home</li>
-      <li>Services</li>
-      <li>Contact</li>
-      <li>About Us</li>
-    </ul>
-  </nav>
+    <img src="../assets/img/favicon.png">
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>About Us</li>
+        </ul>
+    </nav>
 </header>
+
 <main>
-  <div class="sidebar">
-    <ul>
-      <li>
-        <div>Home</div>
-      </li>
-      <li>
-        <div>Services</div>
-      </li>
-      <li>
-        <div>Contact</div>
-      </li>
-      <li>
-        <div>About Us</div>
-      </li>
-    </ul>
-  </div>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>About Us</li>
+        </ul>
+    </nav>
+
+    <section>
+       <section>
+           <div></div>
+           <div></div>
+           <div></div>
+       </section>
+
+        <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores laudantium obcaecati quae. A, alias
+                delectus, eius eligendi facilis id impedit iste labore molestias officiis quis quo, quos repellat sed.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores laudantium obcaecati quae. A, alias
+                delectus, eius eligendi facilis id impedit iste labore molestias officiis quis quo, quos repellat sed.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores laudantium obcaecati quae. A, alias
+                delectus, eius eligendi facilis id impedit iste labore molestias officiis quis quo, quos repellat sed.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores laudantium obcaecati quae. A, alias
+                delectus, eius eligendi facilis id impedit iste labore molestias officiis quis quo, quos repellat sed.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores laudantium obcaecati quae. A, alias
+                delectus, eius eligendi facilis id impedit iste labore molestias officiis quis quo, quos repellat sed.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores laudantium obcaecati quae. A, alias
+                delectus, eius eligendi facilis id impedit iste labore molestias officiis quis quo, quos repellat sed.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores laudantium obcaecati quae. A, alias
+                delectus, eius eligendi facilis id impedit iste labore molestias officiis quis quo, quos repellat sed.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores laudantium obcaecati quae. A, alias
+                delectus, eius eligendi facilis id impedit iste labore molestias officiis quis quo, quos repellat sed.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores laudantium obcaecati quae. A, alias
+                delectus, eius eligendi facilis id impedit iste labore molestias officiis quis quo, quos repellat sed.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores laudantium obcaecati quae. A, alias
+                delectus, eius eligendi facilis id impedit iste labore molestias officiis quis quo, quos repellat sed.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores laudantium obcaecati quae. A, alias
+                delectus, eius eligendi facilis id impedit iste labore molestias officiis quis quo, quos repellat sed.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores laudantium obcaecati quae. A, alias
+                delectus, eius eligendi facilis id impedit iste labore molestias officiis quis quo, quos repellat sed.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores laudantium obcaecati quae. A, alias
+                delectus, eius eligendi facilis id impedit iste labore molestias officiis quis quo, quos repellat sed.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores laudantium obcaecati quae. A, alias
+                delectus, eius eligendi facilis id impedit iste labore molestias officiis quis quo, quos repellat sed.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores laudantium obcaecati quae. A, alias
+                delectus, eius eligendi facilis id impedit iste labore molestias officiis quis quo, quos repellat sed.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores laudantium obcaecati quae. A, alias
+                delectus, eius eligendi facilis id impedit iste labore molestias officiis quis quo, quos repellat sed.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores laudantium obcaecati quae. A, alias
+                delectus, eius eligendi facilis id impedit iste labore molestias officiis quis quo, quos repellat sed.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores laudantium obcaecati quae. A, alias
+                delectus, eius eligendi facilis id impedit iste labore molestias officiis quis quo, quos repellat sed.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores laudantium obcaecati quae. A, alias
+                delectus, eius eligendi facilis id impedit iste labore molestias officiis quis quo, quos repellat sed.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores laudantium obcaecati quae. A, alias
+                delectus, eius eligendi facilis id impedit iste labore molestias officiis quis quo, quos repellat sed.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores laudantium obcaecati quae. A, alias
+                delectus, eius eligendi facilis id impedit iste labore molestias officiis quis quo, quos repellat sed.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores laudantium obcaecati quae. A, alias
+                delectus, eius eligendi facilis id impedit iste labore molestias officiis quis quo, quos repellat sed.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores laudantium obcaecati quae. A, alias
+                delectus, eius eligendi facilis id impedit iste labore molestias officiis quis quo, quos repellat sed.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores laudantium obcaecati quae. A, alias
+                delectus, eius eligendi facilis id impedit iste labore molestias officiis quis quo, quos repellat sed.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores laudantium obcaecati quae. A, alias
+                delectus, eius eligendi facilis id impedit iste labore molestias officiis quis quo, quos repellat sed.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores laudantium obcaecati quae. A, alias
+                delectus, eius eligendi facilis id impedit iste labore molestias officiis quis quo, quos repellat sed.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores laudantium obcaecati quae. A, alias
+                delectus, eius eligendi facilis id impedit iste labore molestias officiis quis quo, quos repellat sed.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores laudantium obcaecati quae. A, alias
+                delectus, eius eligendi facilis id impedit iste labore molestias officiis quis quo, quos repellat sed.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores laudantium obcaecati quae. A, alias
+                delectus, eius eligendi facilis id impedit iste labore molestias officiis quis quo, quos repellat sed.</p>
+
+        </section>
+    </section>
+
 </main>
+
 <footer>
-  <div></div>
+    <h4>Developed By Asiri</h4>
 </footer>
+
 </body>
 </html>
