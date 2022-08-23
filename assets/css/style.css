@@ -48,3 +48,65 @@ nav>ul>li>a:hover{
 span{
     color: #f9004d;
 }
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+h1{
+    color: white;
+    font-size: 80px;
+    margin: 20px 0px 20px;
+}
+
+h3{
+    color: #CDA4CD;
+    font-size: 25px;
+    padding-bottom: 50px;
+}
+
+h4{
+    color: #CDA4CD;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.inputMail{
+    width: 380px;
+    position: absolute;
+    max-width: 100%;
+}
+
+.inputMail form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #f9004d;
+    outline: none;
+    border-radius: 30px;
+}
+.inputMail form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color:#f9004d;
+    color: white;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    top: 6px;
+    right: 6px;
+}
+
+.backImage>img{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 20%;
+    left: 60%;
+    border-radius: 50%;
+}
