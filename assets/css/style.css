@@ -110,3 +110,59 @@ h4{
     left: 60%;
     border-radius: 50%;
 }
+
+.about{
+    width: 100%;
+    padding: 100px;
+    background: #191919;
+}
+.about-box img{
+    width: 450px;
+}
+
+.about-box{
+    width: 1130px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text{
+    width: 500px;
+}
+.about-text h2{
+    color: white;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.about-text h5{
+    color: white;
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.about-text p{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+
+.about-text button{
+    background-color:#f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.about-text button:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+}
