@@ -177,6 +177,7 @@ h4{
     color: white;
     font-size: 80px;
     text-align: center;
+    margin: 30px;
 }
 
 .box{
@@ -187,24 +188,25 @@ h4{
 }
 
 .middle-box{
-    height: 300px;
-    background:#191919;
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
     border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
     text-align: center;
-}
-
-.middle-box img{
-    width: 60px;
-    height: 60px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
 }
 
 .middle-box h5{
     color: white;
     font-size: 20px;
     margin-bottom: 15px;
+}
+
+.pa p{
+    color: #fcfc;
+    line-height: 30px;
+    margin-bottom: 50px;
 }
