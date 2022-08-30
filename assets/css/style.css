@@ -8,7 +8,8 @@
 .hero{
     width: 100%;
     height: 100vh;
-    background: #101010;
+    background-size: cover;
+    background: #101010 center;
 }
 
 nav{
@@ -113,15 +114,17 @@ h4{
 
 .about{
     width: 100%;
-    padding: 100px;
+    padding: 100px 0px;
     background: #191919;
 }
 .about-box img{
+    height: auto;
     width: 450px;
 }
 
 .about-box{
     width: 1130px;
+    max-width: 95%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -159,12 +162,6 @@ h4{
     font-weight: bold;
     padding: 13px 30px;
     border-radius: 30px;
-    transition: .4s;
-}
-
-.about-text button:hover{
-    background-color: transparent;
-    border: 2px solid #f9004d;
 }
 
 .services{
@@ -209,4 +206,43 @@ h4{
     color: #fcfc;
     line-height: 30px;
     margin-bottom: 50px;
+}
+
+.middle-box .button{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.skills{
+    background: #191919;
+    width: 100%;
+    padding: 100px;
+}
+
+.skills h2{
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    padding: 30px;
+}
+
+.img-box{
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.img-box img{
+    margin: 18px 32px;
+}
+
+.img-box img:hover{
+    transform: scale(1.6);
+    transition: .3s;
 }
