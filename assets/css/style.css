@@ -338,16 +338,6 @@ h4{
     height: 70px;
     border-radius: 50%;
 }
-.education-box-01, .education-box-02, .education-box-03{
-    height: 200px;
-    width: 470px;
-    padding: 20px 35px;
-    background: #2E2C2C;
-    border-radius: 20px;
-    margin: 15px;
-    overflow: hidden;
-    text-align: center;
-}
 
 .main-box{
     width: 1500px;
@@ -361,6 +351,18 @@ h4{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.education-box-01, .education-box-02, .education-box-03{
+    height: 220px;
+    width: 470px;
+    padding: 10px 10px 35px;
+    background: #2E2C2C;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
 }
 
 .education-box-01{
