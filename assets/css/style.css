@@ -172,7 +172,7 @@ h4{
 
 .title h2{
     color: white;
-    font-size: 80px;
+    font-size: 75px;
     text-align: center;
     margin: 30px;
 }
@@ -224,7 +224,7 @@ h4{
 
 .skills h2{
     color: white;
-    font-size: 80px;
+    font-size: 75px;
     text-align: center;
     padding: 30px;
 }
@@ -255,7 +255,7 @@ h4{
 
 .title-project h2{
     color: white;
-    font-size: 80px;
+    font-size: 75px;
     text-align: center;
     margin: 30px;
 }
@@ -307,4 +307,66 @@ h4{
 .projects-middle-box img:hover{
     transform: scale(1.3);
     transition: .3s;
+}
+
+.education{
+    background:#191919;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.education-title h2{
+    color: white;
+    font-size: 75px;
+    text-align: center;
+    margin: 30px;
+}
+
+.main-box h3{
+    color: white;
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+
+.main-box p{
+    color: white;
+    font-size: 18px;
+    padding-top: 10px;
+}
+.education-box-01 img, .education-box-02 img, .education-box-03 img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.education-box-01, .education-box-02, .education-box-03{
+    height: 200px;
+    width: 470px;
+    padding: 20px 35px;
+    background: #2E2C2C;
+    border-radius: 20px;
+    margin: 15px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.main-box{
+    width: 1500px;
+    height: 600px;
+    max-width: 95%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-box-01{
+    align-self: self-end;
+}
+
+.education-box-03{
+    align-self: self-start;
 }
