@@ -218,43 +218,58 @@
 
     <!--contact section start-->
     <section>
-        <div>
-            <div>
+        <div class="contact">
+            <div class="contact-title">
                 <h2>Contact Me</h2>
             </div>
 
-            <div>
+            <div class="contact-box">
 
-                <div>
-                    <h5>Contact - </h5>
-                    <p>
-                        +94 763 023 852<br>
-                        +94 711 566 337
-                    </p>
-                    <h5>Email - </h5>
-                    <p>madhusankaasiri2@gmail.com</p>
-                    <h5>Address - </h5>
-                    <p>
-                        36/1 B Sandasiri Dunnuwila
-                        Medamahanuwara
-                    </p>
+                <div class="contact-box-01">
+<!--                    <h5>Contact - </h5>-->
+<!--                    <p>-->
+<!--                        +94 763 023 852<br>-->
+<!--                        +94 711 566 337-->
+<!--                    </p>-->
+<!--                    <h5>Email - </h5>-->
+<!--                    <p>madhusankaasiri2@gmail.com</p>-->
+<!--                    <h5>Address - </h5>-->
+<!--                    <p>-->
+<!--                        36/1 B Sandasiri Dunnuwila-->
+<!--                        Medamahanuwara-->
+<!--                    </p>-->
+                    <table>
+                        <tr>
+                            <td>Contact - </td>
+                            <td>+94 763 023 852<br>
+                                +94 711 566 337</td>
+                        </tr>
+
+                        <tr>
+                            <td>Email - </td>
+                            <td>madhusankaasiri2@gmail.com</td>
+                        </tr>
+
+                        <tr>
+                            <td>Address - </td>
+                            <td>36/1 B Sandasiri Dunnuwila<br>
+                                Medamahanuwara</td>
+                        </tr>
+                    </table>
                 </div>
 
-                <div>
+                <div class="contact-box-02">
                     <form>
-                        <label>Name</label>
-                        <input>
+                        <input id="input-name" type="text" name="firstname" placeholder="Name">
 
-                        <label>Email</label>
-                        <input>
+                        <input id="input-email" type="text" name="email" placeholder="Email">
 
-                        <label>Message</label>
-                        <textarea></textarea>
+                        <textarea id="input-message" name="subject" placeholder="Message"></textarea>
 
-                        <p><a href="#">Send</a></p>
+                        <button type="send">Send</button>
                     </form>
-                </div>
 
+                </div>
             </div>
 
         </div>

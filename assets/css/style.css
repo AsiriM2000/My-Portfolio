@@ -203,7 +203,7 @@ h4{
     height: 365px;
     width: 335px;
     padding: 20px 35px;
-    background: #191919;
+    background: #2E2C2C;
     border-radius: 20px;
     margin: 15px;
     position: relative;
@@ -286,7 +286,7 @@ h4{
     height: 365px;
     width: 335px;
     padding: 20px 35px;
-    background: #191919;
+    background: #2E2C2C;
     border-radius: 20px;
     margin: 15px;
     position: relative;
@@ -384,4 +384,69 @@ h4{
 
 .education-box-03{
     align-self: self-start;
+}
+
+.contact{
+    background:#101010;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.contact-title h2{
+    color: white;
+    font-size: 75px;
+    text-align: center;
+    margin: 30px;
+}
+
+.contact-box-01, .contact-box-02{
+    height: 365px;
+    width: 600px;
+    padding: 20px 35px;
+    background: #2E2C2C;
+    border-radius: 20px;
+    margin: 170px;
+    position: relative;
+    overflow: hidden;
+}
+
+#input-email, #input-name, #input-message{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.contact-box-02 form{
+    margin: 50px 0px;
+}
+
+.contact-box-02 button{
+    background-color:#f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+}
+tr td:first-child{
+    padding-right: 20px;
+}
+
+tr td{
+    padding-top: 50px;
+    color: white;
+    font-size: 20px;
 }
