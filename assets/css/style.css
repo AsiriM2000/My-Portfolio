@@ -12,6 +12,16 @@
     background: #101010 center;
 }
 
+.hero button{
+    background-color:#f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+}
+
 nav{
     display: flex;
     align-items: center;
