@@ -20,6 +20,11 @@
     font-weight: bold;
     padding: 13px 30px;
     border-radius: 30px;
+    transition: transform .4s;
+}
+
+.hero button:hover{
+    transform: scale(1.2);
 }
 
 nav{
