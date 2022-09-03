@@ -20,6 +20,7 @@
     font-weight: bold;
     padding: 13px 30px;
     border-radius: 30px;
+    cursor: pointer;
     transition: transform .4s;
 }
 
@@ -182,6 +183,13 @@ h4{
     font-weight: bold;
     padding: 13px 30px;
     border-radius: 30px;
+    transition: .4s;
+}
+
+.about-text button:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
 }
 
 .services{
@@ -229,13 +237,21 @@ h4{
 }
 
 .middle-box .button{
-    background-color: #f9004d;
+    background-color:#f9004d;
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 20px;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
 }
 
+.middle-box .button:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
 .skills{
     background: #191919;
     width: 100%;
@@ -260,11 +276,11 @@ h4{
 
 .img-box img{
     margin: 18px 32px;
+    transition: transform .4s;
 }
 
 .img-box img:hover{
     transform: scale(1.5);
-    transition: .5s;
 }
 
 .projects{
@@ -310,6 +326,7 @@ h4{
     height: 150px;
     width: 200px;
     border-radius: 10px;
+    transition: transform .4s;
 }
 
 .pra a{
@@ -318,15 +335,24 @@ h4{
     margin-bottom: 50px;
 }
 .projects-middle-box .button{
-    background-color: #f9004d;
+    background-color:#f9004d;
+    color: white;
     text-decoration: none;
-    padding: 5px 40px;
-    border-radius: 20px;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 7px 45px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.projects-middle-box .button:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
 }
 
 .projects-middle-box img:hover{
     transform: scale(1.3);
-    transition: .3s;
 }
 
 .education{
@@ -445,7 +471,15 @@ h4{
     font-weight: bold;
     padding: 10px 35px;
     border-radius: 20px;
+    transition: .4s;
 }
+
+.contact-box-02 button:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
 tr td:first-child{
     padding-right: 20px;
 }
@@ -479,8 +513,15 @@ tr td{
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
-    padding: 13px 30px;
+    padding: 10px 30px;
     border-radius: 30px;
+    transition: .4s;
+}
+
+.hire-me a:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
 }
 
 footer{
