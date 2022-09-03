@@ -258,8 +258,8 @@ h4{
 }
 
 .img-box img:hover{
-    transform: scale(1.6);
-    transition: .3s;
+    transform: scale(1.5);
+    transition: .5s;
 }
 
 .projects{
@@ -518,4 +518,16 @@ footer p:nth-child(2){
     color: white;
     text-decoration: none;
     font-size: 20px;
+}
+
+.social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
+
+.end{
+    position: absolute;
+    color:#f9004d;
+    bottom: 35px;
+    font-size: 14px;
 }
