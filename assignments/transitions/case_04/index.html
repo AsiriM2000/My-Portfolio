@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Slider Animation</title>
+
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: #858585;
+        }
+
+        .slide-frame{
+            width: 1200px;
+            height: 800px;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            position: absolute;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        @keyframes animation {
+            0% {left: 0px}
+            10% {left: 0px}
+            20% {left: 1200px}
+            30% {left: 1200px}
+            40% {left: 2400px}
+            50% {left: 2400px}
+            60% {left: 1200px}
+            70% {left: 1200px}
+            80% {left: 0px}
+            90% {left: 0px}
+            100% {left: 0px}
+        }
+
+        .slide-images{
+            width: 3600px;
+            height: 800px;
+            margin: 0 0 0 -2400px;
+            position: relative;
+            animation-name: animation;
+            animation-duration: 33s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-play-state: running;
+        }
+
+        .img-view{
+            width: 1200px;
+            height: 800px;
+            position: relative;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+  <div class="slide-frame">
+      <div class="slide-images">
+          <div class="img-view">
+              <img src="assests/img/banner-2-1280x720.png">
+          </div>
+          <div class="img-view">
+              <img src="assests/img/bodybuilding2.png">
+          </div>
+          <div class="img-view">
+              <img src="assests/img/istockphoto-615284982-612x612.png">
+          </div>
+      </div>
+  </div>
+</body>
+</html>
