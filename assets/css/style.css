@@ -599,9 +599,20 @@ footer p:nth-child(2){
 }
 
 /*Responsive Website*/
-@media screen and (min-width: 320px){
-    .hero{
-        width: 100%;
+@media screen and (max-width: 1440px){
+    .backImage{
+        width: 32%;
+        height: 70%;
     }
+
+    .backImage img{
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        transition: bottom 1s, left 1s;
+    }
+
 
 }
