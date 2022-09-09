@@ -604,11 +604,4 @@ footer p:nth-child(2){
         width: 32%;
         height: 76%;
     }
-    .backImage:hover .shape{
-        bottom: 15px;
-    }
-
-    .backImage:hover .boy{
-        left: 50%;
-    }
 }
