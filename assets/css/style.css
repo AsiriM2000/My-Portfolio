@@ -599,20 +599,16 @@ footer p:nth-child(2){
 }
 
 /*Responsive Website*/
-@media screen and (max-width: 1440px){
-    .backImage{
+@media screen and (max-width: 1440px) {
+    .backImage {
         width: 32%;
-        height: 70%;
+        height: 76%;
+    }
+    .backImage:hover .shape{
+        bottom: 15px;
     }
 
-    .backImage img{
-        height: 100%;
-        position: absolute;
+    .backImage:hover .boy{
         left: 50%;
-        bottom: 0;
-        transform: translateX(-50%);
-        transition: bottom 1s, left 1s;
     }
-
-
 }
