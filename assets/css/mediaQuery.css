@@ -197,7 +197,7 @@
 
     .about-text{
         margin-left: 12px;
-        width: 400px;
+        width: 375px;
     }
     .about-box img {
         width: 250px;
@@ -308,6 +308,63 @@
     }
     footer p:nth-child(2) {
         width: 400px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .about-box {
+        width: 314px;
+    }
+
+    .about-text {
+        margin-left: 22px;
+        width: 265px;
+    }
+    .about-text h2 {
+        font-size: 56px;
+    }
+    .about-text p {
+        font-size: 18px;
+    }
+    .middle-box {
+        width: 324px;
+    }
+    .title h2 {
+        font-size: 56px;
+    }
+    .skills h2 {
+        font-size: 56px;
+    }
+    .title-project h2 {
+        font-size: 56px;
+    }
+    .projects-middle-box {
+        width: 300px;
+    }
+    .education-box-01, .education-box-02, .education-box-03 {
+        width: 326px;
+    }
+    .education-title h2 {
+        font-size: 56px;
+    }
+    .contact-title h2 {
+        font-size: 56px;
+    }
+    tr td:first-child {
+        padding-right: 16px;
+    }
+    .contact-box-01, .contact-box-02 {
+        width: 345px;
+    }
+    .hire-me p {
+        font-size: 20px;
+    }
+    footer p:nth-child(1) {
+        font-size: 42px;
+    }
+    footer p:nth-child(2) {
+        width: 356px;
         font-size: 14px;
     }
 }
