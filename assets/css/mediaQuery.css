@@ -159,5 +159,25 @@
         line-height: 12px;
     }
 
+    .projects-middle-box{
+       height: 300px;
+    }
 
+    .projects-middle-box h5{
+        font-size: 18px;
+    }
+
+    .projects-middle-box img {
+        height: 118px;
+        width: 142px;
+    }
+
+    .education-box-01, .education-box-02, .education-box-03 {
+        height: 280px;
+    }
+
+    tr td {
+        padding-top: 50px;
+        font-size: 14px;
+    }
 }
