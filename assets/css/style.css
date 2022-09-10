@@ -611,47 +611,4 @@ footer p:nth-child(2){
     font-size: 14px;
 }
 
-/*Responsive Website*/
-
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
-    .backImage {
-        width: 32%;
-        height: 76%;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    nav{
-        padding-left: 5%;
-    }
-
-    .hero button {
-        padding: 8px 18px;
-    }
-
-    .logo {
-        font-size: 28px;
-    }
-
-    .backImage {
-        width: 30%;
-        height: 60%;
-    }
-
-    .about-box {
-        width: 1000px;
-    }
-
-    .content{
-        left: 5%;
-    }
-    .content h1 {
-        font-size: 64px;
-    }
-
-    .content h3 {
-        font-size: 20px;
-    }
-
-}
 

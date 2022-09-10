@@ -1,0 +1,130 @@
+/*Responsive Website*/
+
+@media screen and (max-width: 1440px) {
+    .backImage {
+        width: 32%;
+        height: 70%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    nav{
+        padding-left: 5%;
+    }
+
+    .hero button {
+        padding: 8px 18px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .backImage {
+        width: 30%;
+        height: 60%;
+    }
+
+    .about-box {
+        width: 1000px;
+    }
+
+    .content{
+        left: 5%;
+    }
+    .content h1 {
+        font-size: 64px;
+    }
+
+    .content h3 {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .backImage{
+        height: 40%;
+    }
+
+    .backImage img{
+        left: 60%;
+    }
+    .backImage:hover .shape {
+        bottom: 15px;
+    }
+
+    .backImage:hover .boy{
+        left: 50%;
+    }
+    .hero button {
+        margin-right: 70px;
+    }
+
+    nav>ul{
+        position: absolute;
+        width: 100%;
+        background: #191919;
+        left: 0;
+        top: 100px;
+        text-align: center;
+
+    }
+
+    nav>ul>li{
+        display: block;
+    }
+
+    nav>ul>li>a{
+        color: white;
+        font-size: 18px;
+    }
+
+    .hero button {
+        margin-right: 0px;
+    }
+
+    .content{
+        top: 76%;
+    }
+
+    .content h4{
+        font-size: 15px;
+    }
+    .content h1 {
+        font-size: 38px;
+    }
+
+    .content h3 {
+        font-size: 16px;
+    }
+
+    .inputMail {
+        width: 300px;
+    }
+
+    .inputMail form input:first-child {
+        padding: 6px 120px 12px 15px;
+    }
+
+    .inputMail form input:last-child {
+        padding: 5px 22px;
+    }
+
+    .about-box{
+        display: block;
+        width: 580px;
+        text-align: center;
+    }
+    .about-box img {
+        width: 350px;
+    }
+    .about-text{
+        margin-left: 60px;
+        margin-top: 12px;
+        margin-right: 60px;
+        width: 460px;
+    }
+
+}
