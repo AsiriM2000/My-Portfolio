@@ -181,3 +181,133 @@
         font-size: 14px;
     }
 }
+
+@media screen and (max-width: 425px) {
+    .backImage{
+        display: none;
+    }
+
+    .inputMail form input:first-child {
+        padding: 12px 120px 12px 15px;
+    }
+
+    .inputMail form input:last-child {
+        padding: 8px 22px;
+    }
+
+    .about-text{
+        margin-left: 12px;
+        width: 400px;
+    }
+    .about-box img {
+        width: 250px;
+    }
+
+    .about-box {
+        width: 400px;
+    }
+
+    .about-text h2 {
+        font-size: 60px;
+    }
+
+    .about-text h5 {
+        font-size: 20px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+    .title h2 {
+        font-size: 60px;
+    }
+    .middle-box {
+        width: 365px;
+        margin-left: 30px;
+    }
+    .skills h2 {
+        font-size: 60px;
+    }
+
+    .title-project h2 {
+        font-size: 60px;
+    }
+    .middle-box h5 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .pa p {
+        line-height: 18px;
+        font-size: 12px;
+    }
+
+    .projects-box{
+        display: block;
+        height: 100vh;
+        margin-left: 22px;
+    }
+
+    .projects-middle-box {
+        height: 300px;
+        width: 340px;
+    }
+    .education-title h2 {
+        font-size: 60px;
+    }
+
+    .main-box{
+        display: block;
+    }
+
+    .education-box-01, .education-box-02, .education-box-03 {
+        height: 210px;
+        width: 370px;
+    }
+
+    .contact-title h2 {
+        font-size: 60px;
+    }
+
+    .contact-box{
+        display: block;
+    }
+
+    .contact-box-01, .contact-box-02 {
+        height: 230px;
+        width: 395px;
+    }
+
+    tr td {
+        padding-top: 30px;
+    }
+    .contact-box-02 form {
+         margin: 0px
+    }
+
+    #input-email, #input-name, #input-message {
+        padding: 6px;
+    }
+
+    .contact-box-02 button {
+        padding: 4px 30px;
+    }
+
+    .hire-me p {
+        font-size: 24px;
+    }
+
+    .hire-me a {
+        padding: 6px 22px;
+    }
+
+
+    footer p:nth-child(1) {
+        font-size: 46px;
+    }
+    footer p:nth-child(2) {
+        width: 400px;
+        font-size: 14px;
+    }
+}
