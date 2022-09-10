@@ -127,4 +127,37 @@
         width: 460px;
     }
 
+    .services {
+        height: 100vh;
+    }
+
+    .box{
+        display: block;
+    }
+    .middle-box{
+        margin-left: 50px;
+        width: 665px;
+        height: 185px;
+    }
+
+    .middle-box img {
+        width: 40px;
+        height: 40px;
+    }
+    .middle-box h5 {
+        margin-bottom: 18px;
+    }
+    .pa p {
+        margin-bottom: 24px;
+    }
+    .middle-box .button{
+        padding: 4px 12px;
+        font-size: 12px;
+    }
+
+    .pa p {
+        line-height: 12px;
+    }
+
+
 }
