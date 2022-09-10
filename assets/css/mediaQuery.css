@@ -266,6 +266,9 @@
         width: 370px;
     }
 
+    .content{
+        top: 80%;
+    }
     .contact-title h2 {
         font-size: 60px;
     }
