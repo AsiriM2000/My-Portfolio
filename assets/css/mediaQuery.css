@@ -371,3 +371,99 @@
         font-size: 14px;
     }
 }
+
+@media screen and (max-width: 320px) {
+    .hero button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .content h1 {
+        font-size: 32px;
+    }
+
+    .content h3 {
+        font-size: 14px;
+    }
+
+    .inputMail {
+        width: 270px;
+    }
+    .inputMail form input:first-child {
+        padding: 10px 114px 7px 13px;
+    }
+    .inputMail form input:last-child {
+        padding: 4px 16px;
+    }
+    .middle-box {
+        width: 265px;
+    }
+    .pa p {
+        line-height: 14px;
+    }
+    .projects-middle-box {
+        width: 275px;
+    }
+    .projects-box {
+        margin-left: 10px;
+    }
+    .education-title h2 {
+        font-size: 46px;
+    }
+    .main-box h3 {
+        font-size: 20px;
+    }
+    .main-box p {
+        font-size: 15px;
+    }
+    .education-box-01, .education-box-02, .education-box-03 {
+        width: 270px;
+    }
+    .about-text h2 {
+        font-size: 46px;
+    }
+    .title h2 {
+        font-size: 46px;
+    }
+    .skills h2 {
+        font-size: 46px;
+    }
+    .title-project h2 {
+        font-size: 46px;
+    }
+    .education-title h2 {
+        font-size: 46px;
+    }
+    .contact-title h2 {
+        font-size: 46px;
+    }
+    .contact-box-01, .contact-box-02 {
+        width: 296px;
+    }
+    tr td {
+        padding-top: 38px;
+        font-size: 10px;
+    }
+    .hire-me p {
+        font-size: 16px;
+    }
+    .hire-me a {
+        padding: 4px 18px;
+    }
+    tr td:first-child {
+        padding-right: 34px;
+    }
+    ooter p:nth-child(1) {
+        font-size: 36px;
+    }
+    footer p:nth-child(2) {
+        width: 250px;
+    }
+    footer p:nth-child(1) {
+        font-size: 36px;
+    }
+}
