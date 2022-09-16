@@ -13,7 +13,31 @@
    width: 80px;
 }
 
+header{
+    background: white;
+    box-shadow: 0px -1px 8px 2px #1c1717e8;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
 .card{
     margin-top: 14rem!important;
     background-color: #D9D9D9 !important;
+}
+
+.collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.collapse a{
+    font-size: 20px;
+    color: #0047FF;
+}
+.collapse a:hover{
+    color: #f9004d;
+    transition: .4s;
 }
