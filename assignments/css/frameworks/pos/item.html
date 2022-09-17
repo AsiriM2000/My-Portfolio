@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Document Title
+    ============================================= -->
+  <title>POS System</title>
+
+  <!-- Stylesheets
+   ============================================= -->
+  <link rel="stylesheet" href="assests/css/main.css">
+  <link rel="stylesheet" href="assests/fonts/css/all.min.css">
+  <link rel="stylesheet" href="assests/css/bootstrap.min.css">
+
+  <!-- Meta tags
+    ============================================= -->
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+<body>
+<!-- header
+  ============================================= -->
+<header>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assests/img/cart.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+        POS System
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Customers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Items</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Orders</a>
+          </li>
+        </ul>
+      </div>
+      <a class="navbar-brand" href="#">
+        <img src="assests/img/shutdown.png" alt="Logo" width="30" height="30"
+             class="d-inline-block align-text-top">
+        Log Out
+      </a>
+    </div>
+  </nav>
+</header>
+
+<!-- main
+   ============================================= -->
+<main>
+  <section class="main-section">
+    <section class="customer-head">
+      <ul class="breadcrumb">
+        <img src="assests/img/customers.png" width="35px">
+        <li><a href="#">Dashboard /</a></li>
+        <li class="active"> Items</li>
+      </ul>
+    </section>
+    <button type="button" class="btn btn-secondary back">
+      <img src="assests/img/th-removebg-preview.png" width="25px">
+      Back
+    </button>
+
+    <section class="search">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search Item..." aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <div class="add">
+        <button type="button" class="btn btn-secondary add-cus" data-bs-target="#exampleModal"
+                data-bs-toggle="modal">
+          <img src="assests/img/plus.png" width="20px">
+          Add Item
+        </button>
+        <button type="button" class="btn btn-secondary view-cuss">View All Item</button>
+      </div>
+    </section>
+
+    <section class="cus-table">
+      <table class="table table-bordered">
+        <thead class="bg-danger text-white">
+        <tr>
+          <th>Item Code</th>
+          <th>Item Name</th>
+          <th>Qty</th>
+          <th>Uniq Price</th>
+          <th>Total</th>
+          <th>Action</th>
+        </tr>
+        </thead>
+        <tbdoy>
+          <tr>
+            <td>I001</td>
+            <td>Biscuit</td>
+            <td>10</td>
+            <td>70</td>
+            <td>700</td>
+            <td class="odd">
+              <button class="btn btn-warning btn-mini" data-bs-target="#editCus"
+                      data-bs-toggle="modal"><i class="fa-solid fa-pen-to-square"></i> Edi
+              </button>
+
+              <button class="btn btn-danger btn-mini"><i class="fa-solid fa-trash"></i> Delete</button>
+            </td>
+
+          </tr>
+        </tbdoy>
+      </table>
+    </section>
+  </section>
+
+  <!-- item-form-save
+     ============================================= -->
+
+  <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add Item</h5>
+          <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+        </div>
+        <div class="modal-body">
+          <section>
+            <div class="mb-3">
+              <label class="form-label" for="formFile">Item Code</label>
+              <input class="form-control" id="formFile" type="text">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="formFileMultiple">Item Name</label>
+              <input class="form-control" id="formFileMultiple" multiple type="text">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="formFileDisabled">Qty</label>
+              <input class="form-control" id="formFileDisabled" type="number">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="formFileDisabled">Uniq Price</label>
+              <input class="form-control" id="formFileDisabled1" type="number">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="formFileSm">Total</label>
+              <input class="form-control form-control-sm" id="formFileSm" type="number">
+            </div>
+
+
+            <div aria-label="Basic mixed styles example" class="btn-group" role="group">
+              <button class="btn btn-success save-cus" type="button">Save</button>
+              <button class="btn btn-secondary close-cus" data-bs-dismiss="modal" type="button">Close
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- item-form-edit
+ ============================================= -->
+
+  <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="editCus" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel1">Item Update</h5>
+          <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+        </div>
+        <div class="modal-body">
+          <section>
+            <div class="mb-3">
+              <label class="form-label" for="formFile">Item Code</label>
+              <input class="form-control" id="formFile1" type="text">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="formFileMultiple">Item Name</label>
+              <input class="form-control" id="formFileMultiple1" multiple type="text">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="formFileDisabled">Qty</label>
+              <input class="form-control" id="formFileDisabled3" type="number">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="formFileDisabled">Uniq Price</label>
+              <input class="form-control" id="formFileDisabled2" type="number">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="formFileSm">Total</label>
+              <input class="form-control form-control-sm" id="formFileSm1" type="number">
+            </div>
+
+
+            <div aria-label="Basic mixed styles example" class="btn-group" role="group">
+              <button class="btn btn-success save-cus" type="button">Update</button>
+              <button class="btn btn-secondary close-cus" data-bs-dismiss="modal" type="button">Close
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+
+<script src="assests/js/bootstrap.min.js"></script>
+</body>
+</html>
