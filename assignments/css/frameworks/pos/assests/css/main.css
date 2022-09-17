@@ -83,3 +83,6 @@ header{
 .cus-table{
     margin-top: 25px;
 }
+.save-cus, .close-cus{
+    width: 232px;
+}
