@@ -86,3 +86,7 @@ header{
 .save-cus, .close-cus{
     width: 232px;
 }
+
+tbody tr {
+    color: aqua;
+}

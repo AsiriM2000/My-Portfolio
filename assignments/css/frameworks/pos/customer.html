@@ -60,68 +60,70 @@
 <!-- main
    ============================================= -->
 <main>
-<section class="main-section">
-    <section class="customer-head">
-        <ul class="breadcrumb">
-            <img src="assests/img/customers.png" width="35px">
-            <li><a href="#">Dashboard /</a></li>
-            <li class="active"> Customers</li>
-        </ul>
-    </section>
-    <button type="button" class="btn btn-secondary back">
-        <img src="assests/img/th-removebg-preview.png" width="25px">
-        Back
-    </button>
+    <section class="main-section">
+        <section class="customer-head">
+            <ul class="breadcrumb">
+                <img src="assests/img/customers.png" width="35px">
+                <li><a href="#">Dashboard /</a></li>
+                <li class="active"> Customers</li>
+            </ul>
+        </section>
+        <button type="button" class="btn btn-secondary back">
+            <img src="assests/img/th-removebg-preview.png" width="25px">
+            Back
+        </button>
 
-    <section class="search">
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" >
-            <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-        <div class="add">
-            <button type="button" class="btn btn-secondary add-cus" data-bs-target="#exampleModal" data-bs-toggle="modal" >
-                <img src="assests/img/plus.png" width="20px">
-                Add Customer
-            </button>
-            <button type="button" class="btn btn-secondary view-cuss">View All Customer</button>
-        </div>
-    </section>
+        <section class="search">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search Customer..." aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <div class="add">
+                <button type="button" class="btn btn-secondary add-cus" data-bs-target="#exampleModal"
+                        data-bs-toggle="modal">
+                    <img src="assests/img/plus.png" width="20px">
+                    Add Customer
+                </button>
+                <button type="button" class="btn btn-secondary view-cuss">View All Customer</button>
+            </div>
+        </section>
 
-    <section class="cus-table">
-        <table class="table table-bordered table-hover">
-            <thead class="bg-danger text-white">
-            <tr>
-                <th>Customer ID</th>
-                <th>Customer Name</th>
-                <th>Customer Address</th>
-                <th>Customer Contact</th>
-                <th>Customer Salary</th>
-                <th>Action</th>
-            </tr>
-            </thead>
-            <tbdoy>
-                <tr class="text-white">
-                    <td>C001</td>
-                    <td>Asiri</td>
-                    <td>Kandy</td>
-                    <td>0766621021</td>
-                    <td>25000</td>
-                    <td class="odd"><a title="Click To Edit Customer" rel="facebox" href="">
-                        <button class="btn btn-warning btn-mini"><i class="fa-solid fa-pen-to-square"></i> Edit</button>
-                    </a>
-                        <a href="#" id="15" class="delbutton" title="Click To Delete">
-                            <button class="btn btn-danger btn-mini"><i class="fa-solid fa-trash"></i> Delete</button>
-                        </a>
-                    </td>
-
+        <section class="cus-table">
+            <table class="table table-bordered">
+                <thead class="bg-danger text-white">
+                <tr>
+                    <th>Customer ID</th>
+                    <th>Customer Name</th>
+                    <th>Customer Address</th>
+                    <th>Customer Contact</th>
+                    <th>Customer Salary</th>
+                    <th>Action</th>
                 </tr>
-            </tbdoy>
-        </table>
-    </section>
-</section>
+                </thead>
+                <tbdoy>
+                    <tr>
+                        <td>C001</td>
+                        <td>Asiri</td>
+                        <td>Kandy</td>
+                        <td>0766621021</td>
+                        <td>25000</td>
+                        <td class="odd">
+                            <button class="btn btn-warning btn-mini" data-bs-target="#editCus"
+                                    data-bs-toggle="modal"><i class="fa-solid fa-pen-to-square"></i> Edi
+                            </button>
 
-    <!-- customer-form
+                            <button class="btn btn-danger btn-mini"><i class="fa-solid fa-trash"></i> Delete</button>
+                        </td>
+
+                    </tr>
+                </tbdoy>
+            </table>
+        </section>
+    </section>
+
+    <!-- customer-form-save
        ============================================= -->
+
     <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -155,7 +157,53 @@
 
                         <div aria-label="Basic mixed styles example" class="btn-group" role="group">
                             <button class="btn btn-success save-cus" type="button">Save</button>
-                            <button class="btn btn-secondary close-cus" data-bs-dismiss="modal" type="button">Close</button>
+                            <button class="btn btn-secondary close-cus" data-bs-dismiss="modal" type="button">Close
+                            </button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- customer-form-edit
+   ============================================= -->
+
+    <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="editCus" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Customer Update</h5>
+                    <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                </div>
+                <div class="modal-body">
+                    <section>
+                        <div class="mb-3">
+                            <label class="form-label" for="formFile">Customer ID</label>
+                            <input class="form-control" id="formFile1" type="text">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="formFileMultiple">Customer Name</label>
+                            <input class="form-control" id="formFileMultiple1" multiple type="text">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="formFileDisabled">Customer Address</label>
+                            <input class="form-control" id="formFileDisabled11" type="text">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="formFileDisabled">Customer Contact</label>
+                            <input class="form-control" id="formFileDisabled12" type="text">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="formFileSm">Customer Salary</label>
+                            <input class="form-control form-control-sm" id="formFileSm1" type="number">
+                        </div>
+
+
+                        <div aria-label="Basic mixed styles example" class="btn-group" role="group">
+                            <button class="btn btn-success save-cus" type="button">Update</button>
+                            <button class="btn btn-secondary close-cus" data-bs-dismiss="modal" type="button">Close
+                            </button>
                         </div>
                     </section>
                 </div>
@@ -164,6 +212,8 @@
     </div>
 
 </main>
+
+
 <script src="assests/js/bootstrap.min.js"></script>
 </body>
 </html>
