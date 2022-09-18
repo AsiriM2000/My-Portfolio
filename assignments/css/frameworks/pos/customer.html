@@ -7,14 +7,110 @@
 
     <!-- Stylesheets
      ============================================= -->
-    <link rel="stylesheet" href="assests/css/main.css">
     <link rel="stylesheet" href="assests/fonts/css/all.min.css">
     <link rel="stylesheet" href="assests/css/bootstrap.min.css">
 
     <!-- Meta tags
       ============================================= -->
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!-- Styles
+      ============================================= -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .customer-head{
+            width: 100%;
+            margin-top: 10px;
+            height: 40px;
+            background-color: #D9D9D9;
+
+        }
+        header{
+            width: 100%;
+            background-color: #D9D9D9;
+        }
+        .main-section{
+            background-color:  #2E4053 ;
+            width: 90%;
+            height: 80vh;
+            margin: auto;
+        }
+        .collapse {
+            flex-basis: 100%;
+            flex-grow: 1;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .collapse a{
+            font-size: 20px;
+            color: #0047FF;
+        }
+        .collapse a:hover{
+            color: #f9004d;
+            transition: .4s;
+        }
+        .breadcrumb {
+            margin-left: 20px;
+            list-style: none;
+            border-radius: 4px;
+        }
+        .breadcrumb li{
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .breadcrumb a{
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .back{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        .search{
+            display: flex;
+            width: 100%;
+            margin-top: 20px;
+            justify-content: space-between;
+        }
+
+        .d-flex{
+            width: 500px;
+            margin-left: 10px;
+        }
+        .add{
+            width: 350px;
+        }
+        .add button:first-child{
+            background-color:#3498DB ;
+        }
+        .add button:last-child{
+            background-color: #F39C12 ;
+        }
+        .add button:first-child:hover{
+            background-color:#3498DB ;
+        }
+        .add button:last-child:hover{
+            background-color:#F39C12 ;
+        }
+        .cus-table{
+            margin-top: 25px;
+        }
+        .save-cus, .close-cus{
+            width: 232px;
+        }
+
+        tbody tr {
+            color: aqua;
+        }
+    </style>
 </head>
 <body>
 <!-- header
