@@ -1,5 +1,5 @@
 # My-Portfolio
-![My-Portfolio-–-Figma](https://user-images.githubusercontent.com/101160624/180790957-57e37f1e-bf16-45f8-900d-e85fdd9068bf.png)
+![My-Portfolio](https://user-images.githubusercontent.com/101160624/190886665-c3481428-84f6-4cec-ac8d-3467d35f8525.png)
 
 # My-Portfolio-Url
 Site-Map URL --> https://www.gloomaps.com/WCCjxkVpnM
