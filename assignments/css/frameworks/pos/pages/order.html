@@ -41,7 +41,7 @@
             width: 90%;
             height: 80vh;
             margin: auto;
-            background-color: #2E4053 ;
+            background-color: #2E4053;
         }
 
         .collapse {
@@ -94,12 +94,18 @@
         tbody tr {
             color: aqua;
         }
-        .cus-table{
+
+        .cus-table {
             margin-top: 25px;
         }
 
-        .order-detail{
+        .order-detail {
             margin-top: 25px;
+        }
+
+        .add-button {
+            text-align: right;
+            margin-top: 1rem;
         }
     </style>
     </style>
@@ -163,77 +169,134 @@
         </button>
 
 
-     <div class="row order-detail">
-         <div class="col-lg-5 mt-lg-0 mt-3">
-             <div class="card">
-                 <div class="card-body">
-                     <div class="row">
-                         <div class="col-6">
-                             <div class="form-group">
-                                 <label>Customer Id</label>
-                                 <select class="form-select">
-                                     <option selected>Open this select menu</option>
-                                     <option value="1">One</option>
-                                     <option value="2">Two</option>
-                                     <option value="3">Three</option>
-                                 </select>
-                             </div>
-                         </div>
+        <div class="row order-detail">
+            <div class="col-lg-6 mt-lg-0 mt-3">
+                <div class="card">
+                    <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label>Customer Id</label>
+                                        <select class="form-select">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
 
-                         <div class="col-6">
-                             <div class="form-group">
-                                 <label>Customer Name</label>
-                                 <input class="form-control" id="formFile" type="text">
-                             </div>
-                         </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label>Customer Name</label>
+                                        <input class="form-control" id="formFile" type="text">
+                                    </div>
+                                </div>
 
-                         <div class="col-6">
-                             <div class="form-group">
-                                 <label>Item Code</label>
-                                 <select class="form-select">
-                                     <option selected>Open this select menu</option>
-                                     <option value="1">One</option>
-                                     <option value="2">Two</option>
-                                     <option value="3">Three</option>
-                                 </select>
-                             </div>
-                         </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label>Item Code</label>
+                                        <select class="form-select">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
 
-                         <div class="col-6">
-                             <div class="form-group">
-                                 <label>Item Description</label>
-                                 <input class="form-control" id="formFile1" type="text">
-                             </div>
-                         </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label>Item Description</label>
+                                        <input class="form-control" id="formFile1" type="text">
+                                    </div>
+                                </div>
 
-                         <div class="col-5">
-                             <div class="form-group">
-                                 <label>Qty On Hand</label>
-                                 <input class="form-control" id="formFile2" type="text">
-                             </div>
-                         </div>
+                                <div class="col-5">
+                                    <div class="form-group">
+                                        <label>Qty On Hand</label>
+                                        <input class="form-control" id="formFile2" type="text">
+                                    </div>
+                                </div>
 
-                         <div class="col-4">
-                             <div class="form-group">
-                                 <label>Unit Price</label>
-                                 <input class="form-control" id="formFile3" type="text">
-                             </div>
-                         </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label>Unit Price</label>
+                                        <input class="form-control" id="formFile3" type="text">
+                                    </div>
+                                </div>
 
-                         <div class="col-3">
-                             <div class="form-group">
-                                 <label>Qty</label>
-                                 <input class="form-control" id="formFile4" type="text">
-                             </div>
-                         </div>
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label>Qty</label>
+                                        <input class="form-control" id="formFile4" type="text">
+                                    </div>
+                                </div>
+                                <div class="add-button">
+                                    <button type="button" class="btn btn-primary col-12 col-sm-auto">Add Item</button>
+                                </div>
 
-                     </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
 
-                 </div>
-             </div>
-         </div>
+            <div class="col-lg-5">
+                <section class="content-box-2 p-4 bg-light">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="" id="total-text">Total : </span>
+                                </div>
+                                <div class="col-12">
+                                    <span id="total">00.0</span> Rs/=
+                                </div>
+                            </div>
 
-     </div>
+                        </div>
+
+
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span id="total-text1">SubTotal : </span>
+                                </div>
+                                <div class="col-12">
+                                    <span id="subtotal">00.0</span> Rs/=
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-6 mt-2">
+                            <div class="form-group">
+                                <label>Cash</label>
+                                <input class="form-control" id="txtCash" min="0" type="number">
+                                <span class="control-error"
+                                      id="cash-empty-error"></span>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-2">
+                            <div class="form-group">
+                                <label>Discount</label>
+                                <input class="form-control" id="txtDiscount" min="0" type="number">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="form-group">
+                                <label>Balance</label>
+                                <input class="form-control" id="txtBalance" type="text">
+                            </div>
+                        </div>
+                        <div class="col-4 mt-4">
+                            <button class="btn btn-success" id="btnSubmitOrder" type="button">Purchase</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
         <section class="cus-table ">
             <div class="">
                 <table class="table table-bordered">
@@ -255,7 +318,8 @@
                             <td>0766621021</td>
                             <td>25000</td>
                             <td class="odd">
-                                <button class="btn btn-danger btn-mini"><i class="fa-solid fa-trash"></i> Delete</button>
+                                <button class="btn btn-danger btn-mini"><i class="fa-solid fa-trash"></i> Delete
+                                </button>
                             </td>
 
                         </tr>
@@ -265,7 +329,6 @@
         </section>
 
     </section>
-
 
 
 </main>
