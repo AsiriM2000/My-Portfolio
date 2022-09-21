@@ -39,7 +39,6 @@
 
         .main-section {
             width: 90%;
-            height: 80vh;
             margin: auto;
             background-color: #2E4053;
         }
@@ -79,6 +78,7 @@
 
         .back {
             margin-top: 20px;
+            margin-left: 30px;
         }
 
         .add button:first-child {
@@ -101,6 +101,8 @@
 
         .order-detail {
             margin-top: 25px;
+            margin-left: 20px;
+            margin-right: 20px;
         }
 
         .add-button {
@@ -242,58 +244,60 @@
             </div>
 
             <div class="col-lg-5">
-                <section class="content-box-2 p-4 bg-light">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="row">
-                                <div class="col-12">
-                                    <span class="" id="total-text">Total : </span>
-                                </div>
-                                <div class="col-12">
-                                    <span id="total">00.0</span> Rs/=
-                                </div>
-                            </div>
+               <div class="card">
+                   <section class="content-box-2 p-4 bg-light">
+                       <div class="row">
+                           <div class="col-12">
+                               <div class="row">
+                                   <div class="col-12">
+                                       <span class="" id="total-text">Total : </span>
+                                   </div>
+                                   <div class="col-12">
+                                       <span id="total">00.0</span> Rs/=
+                                   </div>
+                               </div>
 
-                        </div>
+                           </div>
 
 
-                        <div class="col-12">
-                            <div class="row">
-                                <div class="col-12">
-                                    <span id="total-text1">SubTotal : </span>
-                                </div>
-                                <div class="col-12">
-                                    <span id="subtotal">00.0</span> Rs/=
-                                </div>
-                            </div>
+                           <div class="col-12">
+                               <div class="row">
+                                   <div class="col-12">
+                                       <span id="total-text1">SubTotal : </span>
+                                   </div>
+                                   <div class="col-12">
+                                       <span id="subtotal">00.0</span> Rs/=
+                                   </div>
+                               </div>
 
-                        </div>
+                           </div>
 
-                        <div class="col-6 mt-2">
-                            <div class="form-group">
-                                <label>Cash</label>
-                                <input class="form-control" id="txtCash" min="0" type="number">
-                                <span class="control-error"
-                                      id="cash-empty-error"></span>
-                            </div>
-                        </div>
-                        <div class="col-6 mt-2">
-                            <div class="form-group">
-                                <label>Discount</label>
-                                <input class="form-control" id="txtDiscount" min="0" type="number">
-                            </div>
-                        </div>
-                        <div class="col-8">
-                            <div class="form-group">
-                                <label>Balance</label>
-                                <input class="form-control" id="txtBalance" type="text">
-                            </div>
-                        </div>
-                        <div class="col-4 mt-4">
-                            <button class="btn btn-success" id="btnSubmitOrder" type="button">Purchase</button>
-                        </div>
-                    </div>
-                </section>
+                           <div class="col-6 mt-2">
+                               <div class="form-group">
+                                   <label>Cash</label>
+                                   <input class="form-control" id="txtCash" min="0" type="number">
+                                   <span class="control-error"
+                                         id="cash-empty-error"></span>
+                               </div>
+                           </div>
+                           <div class="col-6 mt-2">
+                               <div class="form-group">
+                                   <label>Discount</label>
+                                   <input class="form-control" id="txtDiscount" min="0" type="number">
+                               </div>
+                           </div>
+                           <div class="col-8">
+                               <div class="form-group">
+                                   <label>Balance</label>
+                                   <input class="form-control" id="txtBalance" type="text">
+                               </div>
+                           </div>
+                           <div class="col-4 mt-4">
+                               <button class="btn btn-success" id="btnSubmitOrder" type="button">Purchase</button>
+                           </div>
+                       </div>
+                   </section>
+               </div>
             </div>
         </div>
 
@@ -321,9 +325,10 @@
                                 <button class="btn btn-danger btn-mini"><i class="fa-solid fa-trash"></i> Delete
                                 </button>
                             </td>
-
                         </tr>
                     </tbdoy>
+
+
                 </table>
             </div>
         </section>
