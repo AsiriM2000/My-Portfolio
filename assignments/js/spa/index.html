@@ -24,6 +24,16 @@
       font-family: 'Poppins', sans-serif;
     }
 
+    #main2{
+      display: none;
+    }
+    #main3{
+      display: none;
+    }
+    #main4{
+      display: none;
+    }
+
     header{
       width: 100%;
       background-color: #D9D9D9;
@@ -52,6 +62,7 @@
     main #dashboard {
       height: 700px;
       margin: 50px auto;
+      display: flex;
     }
 
     main #dashboard  section{
@@ -825,11 +836,12 @@
 
 </main>
 
+
 <script src="assests/js/bootstrap.min.js"></script>
 <script src="assests/js/jquery-3.6.1.min.js"></script>
 <script>
   $("#home").click(function () {
-    $("#main1").css("display","flex")
+    $("#main1").css("display","inline")
     $("#main2").css("display","none")
     $("#main3").css("display","none")
     $("#main4").css("display","none")
