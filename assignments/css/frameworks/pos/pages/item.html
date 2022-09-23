@@ -99,8 +99,9 @@
     .add button:last-child:hover{
       background-color:#F39C12 ;
     }
-    .cus-table{
+    .item-table{
       margin-top: 25px;
+      height: 50vh;
     }
     .save-cus, .close-cus{
       width: 232px;
@@ -182,36 +183,38 @@
       </div>
     </section>
 
-    <section class="cus-table">
-      <table class="table table-bordered">
-        <thead class="bg-danger text-white">
-        <tr>
-          <th>Item Code</th>
-          <th>Item Name</th>
-          <th>Qty</th>
-          <th>Uniq Price</th>
-          <th>Total</th>
-          <th>Action</th>
-        </tr>
-        </thead>
-        <tbdoy>
+    <section class="item-table">
+      <div class="col-md-12 mt-4" style="height:430px; overflow-y: scroll">
+        <table class="table table-bordered">
+          <thead class="bg-danger text-white">
           <tr>
-            <td>I001</td>
-            <td>Biscuit</td>
-            <td>10</td>
-            <td>70</td>
-            <td>700</td>
-            <td class="odd">
-              <button class="btn btn-warning btn-mini" data-bs-target="#editCus"
-                      data-bs-toggle="modal"><i class="fa-solid fa-pen-to-square"></i> Edi
-              </button>
-
-              <button class="btn btn-danger btn-mini"><i class="fa-solid fa-trash"></i> Delete</button>
-            </td>
-
+            <th>Item Code</th>
+            <th>Item Name</th>
+            <th>Qty</th>
+            <th>Uniq Price</th>
+            <th>Total</th>
+            <th>Action</th>
           </tr>
-        </tbdoy>
-      </table>
+          </thead>
+          <tbdoy>
+            <tr>
+              <td>I001</td>
+              <td>Biscuit</td>
+              <td>10</td>
+              <td>70</td>
+              <td>700</td>
+              <td class="odd">
+                <button class="btn btn-warning btn-mini" data-bs-target="#editCus"
+                        data-bs-toggle="modal"><i class="fa-solid fa-pen-to-square"></i> Edi
+                </button>
+
+                <button class="btn btn-danger btn-mini"><i class="fa-solid fa-trash"></i> Delete</button>
+              </td>
+
+            </tr>
+          </tbdoy>
+        </table>
+      </div>
     </section>
   </section>
 
