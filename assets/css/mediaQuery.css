@@ -5,6 +5,9 @@
         width: 32%;
         height: 70%;
     }
+    .backImage img {
+        left: 46%;
+    }
 }
 
 @media screen and (max-width: 1024px) {
