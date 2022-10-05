@@ -200,6 +200,10 @@
 }
 
 @media screen and (max-width: 425px) {
+    nav{
+        padding-left: 5%;
+        padding-right: 5%
+    }
     .backImage{
         display: none;
     }
@@ -358,6 +362,10 @@
 }
 
 @media screen and (max-width: 375px) {
+    nav{
+        padding-left: 5%;
+        padding-right: 5%
+    }
     .about-box {
         width: 314px;
     }
@@ -425,7 +433,10 @@
         padding: 6px 12px;
         font-size: 12px;
     }
-
+    nav{
+        padding-left: 5%;
+        padding-right: 5%
+    }
     .logo {
         font-size: 25px;
     }
