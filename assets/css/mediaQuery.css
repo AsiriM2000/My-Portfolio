@@ -175,6 +175,19 @@
         width: 142px;
     }
 
+    .assignment-middle-box{
+        height: 300px;
+    }
+
+    .assignment-middle-box h5{
+        font-size: 18px;
+    }
+
+    .assignment-middle-box img {
+        height: 118px;
+        width: 142px;
+    }
+
     .education-box-01, .education-box-02, .education-box-03 {
         height: 280px;
     }
@@ -256,6 +269,31 @@
         height: 300px;
         width: 340px;
     }
+
+    .title-assignment h2 {
+        font-size: 60px;
+    }
+    .middle-box h5 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .pa p {
+        line-height: 18px;
+        font-size: 12px;
+    }
+
+    .assignment-box{
+        display: block;
+        height: 100vh;
+        margin-left: 22px;
+    }
+
+    .assignment-middle-box {
+        height: 300px;
+        width: 340px;
+    }
+
     .education-title h2 {
         font-size: 60px;
     }
@@ -348,6 +386,12 @@
     .projects-middle-box {
         width: 300px;
     }
+    .title-assignment h2 {
+        font-size: 56px;
+    }
+    .assignment-middle-box {
+        width: 300px;
+    }
     .education-box-01, .education-box-02, .education-box-03 {
         width: 326px;
     }
@@ -414,6 +458,12 @@
     .projects-box {
         margin-left: 10px;
     }
+    .assignment-middle-box {
+        width: 275px;
+    }
+    .assignment-box {
+        margin-left: 10px;
+    }
     .education-title h2 {
         font-size: 46px;
     }
@@ -436,6 +486,9 @@
         font-size: 46px;
     }
     .title-project h2 {
+        font-size: 46px;
+    }
+    .title-assignment h2 {
         font-size: 46px;
     }
     .education-title h2 {

@@ -388,8 +388,80 @@ h4{
     transform: scale(1.3);
 }
 
-.education{
+.assignment{
     background:#191919;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.title-assignment h2{
+    color: white;
+    font-size: 75px;
+    text-align: center;
+    margin: 30px;
+}
+
+.assignment-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.assignment-middle-box{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #2E2C2C;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.assignment-middle-box h5{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.assignment-middle-box img{
+    height: 150px;
+    width: 200px;
+    border-radius: 10px;
+    transition: transform .4s;
+}
+
+.pra a{
+    color: white;
+    line-height: 100px;
+    margin-bottom: 50px;
+}
+.assignment-middle-box .button{
+    background-color:#f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 7px 45px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.assignment-middle-box .button:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+.assignment-middle-box img:hover{
+    transform: scale(1.3);
+}
+
+.education{
+    background:#101010;
     width: 100%;
     padding: 100px 0px;
 }
@@ -451,7 +523,7 @@ h4{
 }
 
 .contact{
-    background:#101010;
+    background:#191919;
     width: 100%;
     padding: 100px 0px;
 }
@@ -526,7 +598,7 @@ tr td{
 .hire-me{
     width: 100%;
     height: 290px;
-    background: #191919;
+    background: #101010;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -561,7 +633,7 @@ footer{
     position: relative;
     width: 100%;
     height: 400px;
-    background: #101010;
+    background: #191919;
     display: flex;
     flex-direction: column;
     align-items: center;
