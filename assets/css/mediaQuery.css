@@ -11,18 +11,19 @@
 }
 
 @media screen and (max-width: 1024px) {
-    nav{
-        padding-left: 5%;
-    }
-
-    .hero button {
-        padding: 8px 18px;
-    }
-
     .logo {
-        font-size: 28px;
+        font-size: 24px;
     }
-
+    nav{
+        padding-left: 2%;
+        padding-right: 2%
+    }
+    nav>ul{
+        font-size: 13px;
+    }
+   .hero button {
+        padding: 8px 7px;
+    }
     .backImage {
         width: 30%;
         height: 60%;
@@ -89,7 +90,7 @@
     }
 
     .content{
-        top: 76%;
+        top: 84%;
     }
 
     .content h4{
