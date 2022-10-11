@@ -41,3 +41,7 @@ function loadAllCustomers() {
     }
 
 }
+
+function clearData() {
+
+}
