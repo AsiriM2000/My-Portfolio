@@ -1,3 +1,5 @@
+
+// Button Events
 $("saveCustomer").click(function (){
 
     let customerID = $("#txtCustomerID").val();
@@ -5,4 +7,9 @@ $("saveCustomer").click(function (){
     let customerAddress = $("#txtCustomerAddress").val();
     let customerContact = $("#txtCustomerContact").val();
     let customerSalary = $("#txtCustomerSalary").val();
+
+    // customer
+    var customerObject = {
+
+    }
 });
