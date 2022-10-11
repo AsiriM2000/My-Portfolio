@@ -16,4 +16,11 @@ $("saveCustomer").click(function (){
         contact : customerContact,
         salary : customerSalary
     }
+
+    // push data
+    customers.push(customerObject);
 });
+
+function loadAllCustomers() {
+
+}
