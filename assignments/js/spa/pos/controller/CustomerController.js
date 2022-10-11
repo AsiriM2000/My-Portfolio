@@ -8,8 +8,12 @@ $("saveCustomer").click(function (){
     let customerContact = $("#txtCustomerContact").val();
     let customerSalary = $("#txtCustomerSalary").val();
 
-    // customer
+    // customer object
     var customerObject = {
-
+        id : customerID,
+        name : customerName,
+        address : customerAddress,
+        contact : customerContact,
+        salary : customerSalary
     }
 });
