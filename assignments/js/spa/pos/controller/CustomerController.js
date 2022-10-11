@@ -28,5 +28,5 @@ function loadAllCustomers() {
         var cusData = `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.contact}</td><td>${customer.salary}</td></tr>`;
     }
 
-
+    $("#tblCustomer").append(cusData);
 }
