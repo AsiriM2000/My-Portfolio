@@ -320,7 +320,7 @@
 
 <!-- dashboard
    ============================================= -->
-<main id="main1">
+<main id="dashboardContent">
   <section id="dashboard">
     <section>
       <a href="#">
@@ -359,7 +359,7 @@
 
 <!-- customer
    ============================================= -->
-<main id="main2">
+<main id="customerContent">
   <section class="main-section">
     <section class="customer-head">
       <ul class="breadcrumb">
@@ -500,7 +500,7 @@
 
 <!-- item
    ============================================= -->
-<main id="main3">
+<main id="itemContent">
   <section class="main-section">
     <section class="item-head">
       <ul class="breadcrumb">
@@ -644,7 +644,7 @@
 
 <!-- order
    ============================================= -->
-<main id="main4">
+<main id="orderContent">
   <section class="main-section" id="order">
     <section class="order-head">
       <ul class="breadcrumb">
@@ -812,36 +812,6 @@
 
 <script src="assests/js/bootstrap.min.js"></script>
 <script src="assests/js/jquery-3.6.1.min.js"></script>
-<script>
 
-  $("#home").click(function () {
-    $("#main1").css("display","inline")
-    $("#main2").css("display","none")
-    $("#main3").css("display","none")
-    $("#main4").css("display","none")
-  });
-
-  $("#customer").click(function () {
-    $("#main1").css("display","none")
-    $("#main2").css("display","flex")
-    $("#main3").css("display","none")
-    $("#main4").css("display","none")
-  });
-
-  $("#item").click(function () {
-    $("#main1").css("display","none")
-    $("#main2").css("display","none")
-    $("#main3").css("display","flex")
-    $("#main4").css("display","none")
-  });
-
-  $("#orders").click(function () {
-    $("#main1").css("display","none")
-    $("#main2").css("display","none")
-    $("#main3").css("display","none")
-    $("#main4").css("display","flex")
-  });
-
-</script>
 </body>
 </html>
