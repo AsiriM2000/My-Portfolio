@@ -22,5 +22,11 @@ $("saveCustomer").click(function (){
 });
 
 function loadAllCustomers() {
+    $("#tblCustomer").empty();
+
+    for (var customer of customers){
+        var cusData = `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.contact}</td><td>${customer.salary}</td></tr>`;
+    }
+
 
 }
