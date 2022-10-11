@@ -29,7 +29,6 @@ $("#saveCustomer").click(function (){
 function loadAllCustomers() {
     $("#tblCustomer").empty();
 
-
     for (var customer of customers) {
 
         var all = `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.contact}</td><td>${customer.salary}</td><td class="odd" style="width: 190px">
@@ -51,4 +50,8 @@ function clearData() {
     $("#txtCustomerAddress").val("");
     $("#txtCustomerContact").val("");
     $("#txtCustomerSalary").val("");
+}
+
+function searchCustomer(cusID) {
+
 }
