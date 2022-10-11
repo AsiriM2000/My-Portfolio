@@ -1,6 +1,5 @@
-
 // Button Events
-$("#saveCustomer").click(function (){
+$("#saveCustomer").click(function () {
 
     let customerID = $("#txtCustomerID").val();
     let customerName = $("#txtCustomerName").val();
@@ -10,11 +9,11 @@ $("#saveCustomer").click(function (){
 
     // customer object
     var customerObject = {
-        id : customerID,
-        name : customerName,
-        address : customerAddress,
-        contact : customerContact,
-        salary : customerSalary
+        id: customerID,
+        name: customerName,
+        address: customerAddress,
+        contact: customerContact,
+        salary: customerSalary
     }
 
     // push data
@@ -26,17 +25,21 @@ $("#saveCustomer").click(function (){
     clearData();
 });
 
+$("#updateCustomer").click(function (){
+
+});
 function loadAllCustomers() {
     $("#tblCustomer").empty();
 
     for (var customer of customers) {
 
-        var all = `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.contact}</td><td>${customer.salary}</td><td class="odd" style="width: 190px">
-                            <button class="btn btn-warning btn-mini" data-bs-target="#editCustomers"
-                                    data-bs-toggle="modal"><i class="fa-solid fa-pen-to-square"></i> Edit
-                            </button>
-                            <button class="btn btn-danger btn-mini"><i class="fa-solid fa-trash"></i> Delete</button>
-                        </td></tr>`;
+        var all = `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.contact}</td><td>${customer.salary}</td>
+                        <td><button class="btn btn-warning btn-mini" data-bs-target="#editCustomers"
+                        data-bs-toggle="modal" id="btn-edit"><i class="fa-solid fa-pen-to-square"></i> Edit
+                        </button>
+                        <button class="btn btn-danger btn-mini"><i class="fa-solid fa-trash"></i> Delete</button>
+                        </td>
+                        </tr>`;
 
         $("#tblCustomer").append(all);
 
@@ -53,5 +56,40 @@ function clearData() {
 }
 
 function searchCustomer(cusID) {
+    for (let customer of customers) {
+        if (customer.id == cusID) {
+            return customer;
+        }
+    }
+}
 
+$(document).on("click", "#btn-edit", function () {
+        $("#tblCustomer>tr").click(function () {
+            let id = $(this).children(":eq(0)").text();
+            let name = $(this).children(":eq(1)").text();
+            let address = $(this).children(":eq(2)").text();
+            let contact = $(this).children(":eq(3)").text();
+            let salary = $(this).children(":eq(4)").text();
+
+            $("#txtCustomerIDEdit").val(id);
+            $("#txtCustomerNameEdit").val(name);
+            $("#txtCustomerAddressEdit").val(address);
+            $("#txtCustomerContactEdit").val(contact);
+            $("#txtCustomerSalaryEdit").val(salary);
+
+        });
+});
+
+function updateCustomer(customerID) {
+    let customer = searchCustomer(customerID);
+    if (customer != null) {
+        customer.id = $("#txtCustomerID").val();
+        customer.name = $("#txtCustomerName").val();
+        customer.address = $("#txtCustomerAddress").val();
+        customer.salary = $("#txtCustomerSalary").val();
+        loadAllCustomers();
+        return true;
+    } else {
+        return false;
+    }
 }
