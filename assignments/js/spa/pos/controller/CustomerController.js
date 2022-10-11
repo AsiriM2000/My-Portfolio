@@ -26,7 +26,14 @@ $("#saveCustomer").click(function () {
 });
 
 $("#updateCustomer").click(function (){
+    let customerID = $("#txtCustomerIDEdit").val();
+    let message = updateCustomer(customerID);
+    if (message) {
+        alert("Customer Updated Successfully");
+    } else {
+        alert("Update Failed..!");
 
+    }
 });
 function loadAllCustomers() {
     $("#tblCustomer").empty();
