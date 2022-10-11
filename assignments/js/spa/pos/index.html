@@ -423,22 +423,27 @@
             <div class="mb-3">
               <label class="form-label" for="txtCustomerID">Customer ID</label>
               <input class="form-control" id="txtCustomerID" type="text">
+              <span class="control-error" id="lblCusID"></span>
             </div>
             <div class="mb-3">
               <label class="form-label" for="txtCustomerName">Customer Name</label>
               <input class="form-control" id="txtCustomerName" multiple type="text">
+              <span class="control-error" id="lblCusName"></span>
             </div>
             <div class="mb-3">
               <label class="form-label" for="txtCustomerAddress">Customer Address</label>
               <input class="form-control" id="txtCustomerAddress" type="text">
+              <span class="control-error" id="lblCusAddress"></span>
             </div>
             <div class="mb-3">
               <label class="form-label" for="txtCustomerContact">Customer Contact</label>
               <input class="form-control" id="txtCustomerContact" type="text">
+              <span class="control-error" id="lblCusContact"></span>
             </div>
             <div class="mb-3">
               <label class="form-label" for="txtCustomerSalary">Customer Salary</label>
               <input class="form-control form-control-sm" id="txtCustomerSalary" type="number">
+              <span class="control-error" id="lblCusSalary"></span>
             </div>
 
 
@@ -813,8 +818,12 @@
 <script src="assests/js/bootstrap.min.js"></script>
 <script src="assests/js/jquery-3.6.1.min.js"></script>
 
+<!--main content-->
 <script src="db/db.js"></script>
 <script src="controller/DashboardController.js"></script>
 <script src="controller/CustomerController.js"></script>
+
+<!--validation-->
+<script src="validation/customerValidation.js"></script>
 </body>
 </html>
