@@ -101,3 +101,7 @@ function updateCustomer(customerID) {
         return false;
     }
 }
+
+function deleteCustomer(customerID) {
+
+}
