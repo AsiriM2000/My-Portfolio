@@ -85,7 +85,7 @@ $("#updateCustomer").click(function (){
 
 function updateCustomer(customerID) {
     let customer = searchCustomer(customerID);
-    console.log(customer);
+
     if (customer != null) {
         customer.id = $("#txtCustomerIDEdit").val();
         customer.name = $("#txtCustomerNameEdit").val();

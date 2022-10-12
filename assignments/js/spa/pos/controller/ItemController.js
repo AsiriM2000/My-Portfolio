@@ -27,7 +27,7 @@ function loadAllItems() {
                         <td><button class="btn btn-warning btn-mini" data-bs-target="#editItems"
                         data-bs-toggle="modal" id="btn-editItem"><i class="fa-solid fa-pen-to-square"></i> Edit
                         </button>
-                        <button class="btn btn-danger btn-mini delete"><i class="fa-solid fa-trash"></i> Delete</button>
+                        <button class="btn btn-danger btn-mini delete-item"><i class="fa-solid fa-trash"></i> Delete</button>
                         </td>
                     </tr>`;
         $("#tblItem").append(all);
@@ -35,7 +35,7 @@ function loadAllItems() {
 }
 
 function searchItem(code) {
-    for (var item of items){
+    for (let item of items){
         if (item.code == code){
             return item;
         }
@@ -62,7 +62,7 @@ function bindRowClickEventTable() {
 }
 
 $("#updateItem").click(function (){
-    let itemCode =  $("#txtItemCodeEdit").val(code);
+    let itemCode =  $("#txtItemCodeEdit").val();
     let message = updateItem(itemCode);
     if (message){
         alert("Item Update Successfully");
@@ -70,3 +70,18 @@ $("#updateItem").click(function (){
         alert("Update Failed..!");
     }
 });
+
+function updateItem(itemCode) {
+    let item = searchItem(itemCode);
+
+    if (item != null){
+        item.code= $("#txtItemCodeEdit").val();
+        item.itemName = $("#txtItemNameEdit").val();
+        item.qty = $("#txtItemQtyEdit").val();
+        item.unitPrice = $("#txtItemUnitPriceEdit").val();
+        loadAllItems();
+        return true;
+    }else {
+         return false;
+    }
+}
