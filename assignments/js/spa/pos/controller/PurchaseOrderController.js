@@ -49,8 +49,10 @@ $("#addItem").click(function (message){
     }
 
     orders.push(orderObject);
-    loadAllOrder();
 
+    cleatOrderData();
+    loadAllOrder();
+    itemQtyLoad(itemCode, qty);
 });
 
 function loadAllOrder() {
@@ -65,4 +67,26 @@ function loadAllOrder() {
                     </tr>`;
         $("#tblOrder").append(all);
     }
+}
+
+function itemQtyLoad(ItemCode, Qty) {
+        for (var item of items){
+            if (item.code == ItemCode){
+                item.qty = item.qty-Qty;
+                return true;
+            }else {
+               return  false;
+            }
+        }
+
+}
+
+function cleatOrderData() {
+    $("#selectCustomerID").val("");
+    $("#orderCustomerName").val("");
+    $("#selectItemCode").val("");
+    $("#itemDescription").val("");
+    $("#qtyOnHand").val("");
+    $("#unitPrice").val("");
+    $("#qty").val("");
 }

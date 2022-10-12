@@ -35,7 +35,7 @@ function checkValidityItem() {
             setTextError(validation.field,validation.error);
         }
     }
-    setButtonState(errorCount);
+    setItemButtonState(errorCount);
 }
 
 $("#txtItemCode").on('keydown', function (event) {
@@ -99,7 +99,7 @@ function focusText(txtField) {
     txtField.focus();
 }
 
-function setButtonState(value){
+function setItemButtonState(value){
     if (value>0){
         $("#saveItem").attr('disabled',true);
     }else{
