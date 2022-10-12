@@ -51,3 +51,9 @@ $("#txtItemName").on('keydown', function (event) {
         focusText($("#txtItemQty"));
     }
 });
+
+$("#txtItemQty").on('keydown', function (event) {
+    if (event.key == "Enter" && check(itemQtyRegEx, $("#txtItemQty"))) {
+        focusText($("#txtItemUnitPrice"));
+    }
+});
