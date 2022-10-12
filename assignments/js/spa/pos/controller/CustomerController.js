@@ -19,10 +19,11 @@ $("#saveCustomer").click(function () {
     // push data
     customers.push(customerObject);
 
-    //load all data
+
+    clearData();
     loadAllCustomers();
     bindRowClickEvents();
-    clearData();
+
 });
 
 function loadAllCustomers() {
@@ -36,16 +37,11 @@ function loadAllCustomers() {
                         </button>
                         <button class="btn btn-danger btn-mini delete"><i class="fa-solid fa-trash"></i> Delete</button>
                         </td>
-                      
-                        </tr>`;
+                    </tr>`;
 
         $("#tblCustomer").append(all);
-
     }
-
 }
-
-
 
 function searchCustomer(cusID) {
     for (let customer of customers) {
@@ -107,7 +103,7 @@ $("#tblCustomer").on("click", ".delete", function (e) {
     if (confirm("Are you sure want to delete this record!")) {
         $(this).closest('tr').remove();
     } else {
-        e.preventDefault();
+        alert("No such customer to delete.");
     }
 });
 
