@@ -16,3 +16,11 @@ $("#txtItemCode,#txtItemName,#txtItemQty,#txtItemUnitPrice").on('keydown', funct
         event.preventDefault();
     }
 });
+
+$("#txtItemCode,#txtItemName,#txtItemQty,#txtItemUnitPrice").on('keyup', function (event) {
+    checkValidityItem();
+});
+
+$("#txtItemCode,#txtItemName,#txtItemQty,#txtItemUnitPrice").on('blur', function (event) {
+    checkValidityItem();
+});
