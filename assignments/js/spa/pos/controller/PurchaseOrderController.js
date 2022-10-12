@@ -47,4 +47,6 @@ $("#addItem").click(function (){
         price:unitPrice,
         qty:qty
     }
+
+    orders.push(orderObject);
 });
