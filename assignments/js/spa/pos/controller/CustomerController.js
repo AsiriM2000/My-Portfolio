@@ -23,6 +23,7 @@ $("#saveCustomer").click(function () {
     clearData();
     loadAllCustomers();
     bindRowClickEvents();
+    loadAllCustomersForOption();
 
 });
 
