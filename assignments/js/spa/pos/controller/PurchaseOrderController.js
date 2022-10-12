@@ -85,7 +85,11 @@ function itemQtyLoad(ItemCode, Qty) {
 }
 
 $("#tblOrder").on("click", ".delete-order", function (){
-
+    if (confirm("Are you sure want to delete this record!")) {
+        $(this).closest('tr').remove();
+    } else {
+        alert("No such item to delete.");
+    }
 });
 
 function cleatOrderData() {
