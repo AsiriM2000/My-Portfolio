@@ -94,3 +94,10 @@ $("#tblItem").on("click", ".delete-item", function (){
         alert("No such item to delete.");
     }
 });
+
+function clearItemData() {
+    $("#txtItemCode").val("");
+    $("#txtItemName").val("");
+    $("#txtItemQty").val("");
+    $("#txtItemUnitPrice").val("");
+}
