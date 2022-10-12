@@ -45,3 +45,9 @@ $("#txtItemCode").on('keydown', function (event) {
         focusText($("#txtItemCode"));
     }
 });
+
+$("#txtItemName").on('keydown', function (event) {
+    if (event.key == "Enter" && check(itemNameRegEx, $("#txtItemName"))) {
+        focusText($("#txtItemQty"));
+    }
+});
