@@ -20,3 +20,12 @@ function loadAllItemForOption() {
     }
 
 }
+
+$("#selectItemCode").click(function (){
+    let code = $("#selectItemCode").val();
+    let search = searchItem(code);
+    $("#itemDescription").val(search.itemName);
+    $("#qtyOnHand").val(search.qty);
+    $("#unitPrice").val(search.unitPrice);
+});
+
