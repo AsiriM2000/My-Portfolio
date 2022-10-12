@@ -32,3 +32,11 @@ function loadAllItems() {
         $("#tblItem").append(all);
     }
 }
+
+function searchItem(code) {
+    for (var item of items){
+        if (item.code == code){
+            return item;
+        }
+    }
+}
