@@ -57,3 +57,12 @@ $("#txtItemQty").on('keydown', function (event) {
         focusText($("#txtItemUnitPrice"));
     }
 });
+
+$("#txtItemUnitPrice").on('keydown', function (event) {
+    if (event.key == "Enter" && check(itemUnitPriceRegEx, $("#txtItemUnitPrice"))) {
+        let res = confirm("Do you want to add this item.?");
+        if (res) {
+            clearAllTexts();
+        }
+    }
+});
