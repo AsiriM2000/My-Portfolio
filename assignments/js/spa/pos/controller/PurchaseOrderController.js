@@ -111,7 +111,7 @@ $("#btnSubmitOrder").click(function (){
 
         let orderDetailAll = orderDetail(oId,date,id,code,unitPrice,qty,total);
         orderDetails.push(orderDetailAll);
-
+        clearOrder();
 });
 
 function generateOrderID() {
@@ -125,10 +125,7 @@ function date(){
 
 }
 
-function remove(){
-    $("#tblOrder>tr").children(":eq(0)").text().remove();
-    $("#tblOrder>tr").children(":eq(1)").text().remove();
-    $("#tblOrder>tr").children(":eq(3)").text().remove();
-    $("#tblOrder>tr").children(":eq(4)").text().remove();
-    $("#tblOrder>tr").children(":eq(5)").text().remove();
+function clearOrder(){
+    orders.splice(0, orders.length);
+    $("#tblOrder").empty();
 }
