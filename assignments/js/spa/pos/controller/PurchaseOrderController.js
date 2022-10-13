@@ -79,15 +79,6 @@ function itemQtyLoad(ItemCode, Qty) {
 
 }
 
-$("#tblOrder").on("click", ".delete-order", function (){
-    if (confirm("Are you sure want to delete this record!")) {
-        $(this).closest('tr').remove();
-        loadAllOrder();
-    } else {
-        alert("No such item to delete.");
-    }
-});
-
 function cleatOrderData() {
 
     $("#selectCustomerID").val("");
@@ -110,6 +101,7 @@ $("#btnSubmitOrder").click(function (){
         let total = $("#tblOrder>tr").children(":eq(5)").text();
 
         let orderDetailAll = orderDetail(oId,date,id,code,unitPrice,qty,total);
+
         orderDetails.push(orderDetailAll);
         clearOrder();
 });
