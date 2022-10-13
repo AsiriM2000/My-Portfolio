@@ -22,14 +22,12 @@ $("#saveCustomer").click(function () {
 
 function loadAllCustomers() {
     $("#tblCustomer").empty();
-
     for (var customer of customers) {
 
         var all = `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.contact}</td><td>${customer.salary}</td>
                         <td><button class="btn btn-warning btn-mini" data-bs-target="#editCustomers"
                         data-bs-toggle="modal" id="btn-edit"><i class="fa-solid fa-pen-to-square"></i> Edit
                         </button>
-                        <button class="btn btn-danger btn-mini delete"><i class="fa-solid fa-trash"></i> Delete</button>
                         </td>
                     </tr>`;
 
@@ -57,11 +55,14 @@ function bindRowClickEvents() {
         let contact = $(this).children(":eq(3)").text();
         let salary = $(this).children(":eq(4)").text();
 
+
         $("#txtCustomerIDEdit").val(id);
         $("#txtCustomerNameEdit").val(name);
         $("#txtCustomerAddressEdit").val(address);
         $("#txtCustomerContactEdit").val(contact);
         $("#txtCustomerSalaryEdit").val(salary);
+
+        $("#txtCustomerID").val(id);
 
     });
 
@@ -93,18 +94,44 @@ function updateCustomer(customerID) {
     }
 }
 
-$("#tblCustomer").on("click", ".delete", function () {
-    if (confirm("Are you sure want to delete this record!")) {
-        $(this).closest('tr').remove();
-    } else {
-        alert("No such customer to delete.");
+$('#delete').click(function () {
+    let deleteID = $("#txtCustomerID").val();
+
+    let option = confirm("Do you really want to delete " + deleteID);
+
+    if (option) {
+        if (deleteCustomer(deleteID)) {
+            alert("Customer Successfully Deleted..");
+            clearData();
+        } else {
+            alert("No such customer to delete. please check the id");
+        }
     }
+
 });
 
+function deleteCustomer(cusId) {
+    let customer = searchCustomer(cusId);
+
+    if (customer != null) {
+        let IndexNumber = customers.indexOf(customer);
+        customers.splice(IndexNumber, 1);
+        loadAllCustomers();
+        bindRowClickEvents();
+        return true;
+
+    } else {
+        return false;
+    }
+}
+
 function clearData() {
+
     $("#txtCustomerID").val("");
     $("#txtCustomerName").val("");
     $("#txtCustomerAddress").val("");
     $("#txtCustomerContact").val("");
     $("#txtCustomerSalary").val("");
+
 }
+
