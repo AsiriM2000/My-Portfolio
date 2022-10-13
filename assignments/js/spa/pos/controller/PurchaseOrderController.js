@@ -134,6 +134,24 @@ $("#update").click(function (){
     }
 });
 
+function updateOrder(orderId) {
+    let orderD = searchOrder(orderId);
+
+    if (orderD!= null) {
+        orderD.id = $("#selectCustomerID").val();
+        orderD.name = $("#orderCustomerName").val();
+        orderD.code = $("#selectItemCode").val();
+        orderD.itemName = $("#itemDescription").val();
+        orderD.qtyOnHand = $("#qtyOnHand").val();
+        orderD.price = $("#unitPrice").val();
+        orderD.qty = $("#qty").val();
+
+        loadAllOrder();
+        return true;
+    } else {
+        return false;
+    }
+}
 
 
 function searchOrder(orderId){
