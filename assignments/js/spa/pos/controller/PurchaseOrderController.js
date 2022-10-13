@@ -122,3 +122,25 @@ function clearOrder(){
     orders.splice(0, orders.length);
     $("#tblOrder").empty();
 }
+
+$("#update").click(function (){
+    let orderId = $("#orderID").val();
+    let message = updateOrder(orderId);
+    if (message) {
+        alert("Order Updated Successfully");
+    } else {
+        alert("Update Failed..!");
+
+    }
+});
+
+
+
+function searchOrder(orderId){
+    for (let o of orders){
+        if (o.orderId == orderId){
+            return o;
+        }
+    }
+    return null;
+}
