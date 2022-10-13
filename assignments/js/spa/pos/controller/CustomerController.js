@@ -124,7 +124,14 @@ function deleteCustomer(cusId) {
         return false;
     }
 }
-
+function searchOrder(orderId){
+    for (let o of orders){
+        if (o.orderId == orderId){
+            return o;
+        }
+    }
+    return null;
+}
 function clearData() {
 
     $("#txtCustomerID").val("");
