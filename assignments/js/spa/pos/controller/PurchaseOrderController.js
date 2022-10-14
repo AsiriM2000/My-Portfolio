@@ -29,14 +29,15 @@ function loadAllItemForOption() {
 $("#selectItemCode").click(function () {
     let code = $("#selectItemCode").val();
     let search = searchItem(code);
-    $("#itemDescription").val(search.itemName);
-    $("#qtyOnHand").val(search.qty);
-    console.log(search.qty);
-    $("#unitPrice").val(search.unitPrice);
+    if (search != null) {
+        $("#itemDescription").val(search.itemName);
+        // $("#qtyOnHand").val(search.qty);
+        console.log(search.qty);
+        $("#unitPrice").val(search.unitPrice);
+    }
 });
 
 $("#addItem").click(function () {
-    qtyItem();
     let oId = $("#orderID").val();
     let cusId = $("#selectCustomerID").val();
     let cusName = $("#orderCustomerName").val();
@@ -136,16 +137,15 @@ function removeItemInOrder() {
     });
 }
 
-function qtyItem(){
-    let itemCode = $("#selectItemCode").val();
-    let item = searchItem(itemCode);
-    let Oqty = $("#qty").val();
-    let manageQty = item.qty-Oqty;
-    if (item != null){
-        item.qty = manageQty;
-        loadAllItems();
-        return true;
-    }else {
-        return false;
-    }
-}
+// function qtyItem() {
+//     let itemCode = $("#selectItemCode").val();
+//     let item = searchItem(itemCode);
+//     let manageQty = item.qty - 2;
+//     if (item != null) {
+//         item.qty = manageQty;
+//         loadAllItems();
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
