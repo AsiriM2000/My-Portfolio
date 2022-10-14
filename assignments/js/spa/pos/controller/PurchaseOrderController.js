@@ -103,8 +103,11 @@ $("#btnSubmitOrder").click(function () {
 
     let orderDetailAll = orderDetail(oId, date, id, code, unitPrice, qty, total);
 
+
     orderDetails.push(orderDetailAll);
+    qtyItem();
     clearOrder();
+
 });
 
 function generateOrderID() {
@@ -128,4 +131,18 @@ function removeItemInOrder() {
         orders.splice(0, orders.length);
         $("#tblOrder").empty();
     });
+}
+
+function qtyItem(){
+    let Oqty = $("#qty").val();
+    let itemCode = $("#selectItemCode").val();
+    let item = searchItem(itemCode);
+    let manageQty = item.qty-Oqty;
+    if (item != null){
+        item.qty = manageQty;
+        loadAllItems();
+        return true;
+    }else {
+        return false;
+    }
 }
