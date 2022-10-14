@@ -4,6 +4,7 @@ $(document).ready(function () {
 
 function loadAllCustomersForOption() {
     $("#selectCustomerID").empty();
+    $('#selectCustomerID').prepend('<option>Select CustomerId</option>');
     for (let cus of customers) {
         $("#selectCustomerID").append(`<option>${cus.id}</option>`);
     }
@@ -18,6 +19,7 @@ $("#selectCustomerID").click(function () {
 
 function loadAllItemForOption() {
     $("#selectItemCode").empty();
+    $('#selectItemCode').prepend('<option>Select Item</option>');
     for (let item of items) {
         $("#selectItemCode").append(`<option>${item.code}</option>`);
     }
@@ -29,10 +31,12 @@ $("#selectItemCode").click(function () {
     let search = searchItem(code);
     $("#itemDescription").val(search.itemName);
     $("#qtyOnHand").val(search.qty);
+    console.log(search.qty);
     $("#unitPrice").val(search.unitPrice);
 });
 
 $("#addItem").click(function () {
+    qtyItem();
     let oId = $("#orderID").val();
     let cusId = $("#selectCustomerID").val();
     let cusName = $("#orderCustomerName").val();
@@ -45,7 +49,6 @@ $("#addItem").click(function () {
     var order = saveOrder(oId, cusId, cusName, itemCode, itemName, qtyOnHand, unitPrice, qty);
 
     orders.push(order);
-
 
     loadAllOrder();
     cleatOrderData();
@@ -105,9 +108,7 @@ $("#btnSubmitOrder").click(function () {
 
 
     orderDetails.push(orderDetailAll);
-    qtyItem();
     clearOrder();
-
 });
 
 function generateOrderID() {
@@ -124,6 +125,8 @@ function date() {
 function clearOrder() {
     orders.splice(0, orders.length);
     $("#tblOrder").empty();
+    $("#total").text("");
+    $("#subtotal").text("");
 }
 
 function removeItemInOrder() {
@@ -134,9 +137,9 @@ function removeItemInOrder() {
 }
 
 function qtyItem(){
-    let Oqty = $("#qty").val();
     let itemCode = $("#selectItemCode").val();
     let item = searchItem(itemCode);
+    let Oqty = $("#qty").val();
     let manageQty = item.qty-Oqty;
     if (item != null){
         item.qty = manageQty;
