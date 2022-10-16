@@ -31,7 +31,7 @@ $("#selectItemCode").click(function () {
     let search = searchItem(code);
     if (search != null) {
         $("#itemDescription").val(search.itemName);
-        // $("#qtyOnHand").val(search.qty);
+         $("#qtyOnHand").val(search.qty);
         console.log(search.qty);
         $("#unitPrice").val(search.unitPrice);
     }
