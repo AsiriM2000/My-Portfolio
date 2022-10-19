@@ -359,6 +359,9 @@
         width: 400px;
         font-size: 14px;
     }
+    #viewMore{
+        margin-top: 100px;
+    }
 }
 
 @media screen and (max-width: 375px) {
