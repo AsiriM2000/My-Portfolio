@@ -84,6 +84,7 @@ span{
     font-weight: bold;
     font-size: 20px;
 }
+
 .content{
     position: absolute;
     top: 50%;
@@ -451,6 +452,28 @@ h4{
 }
 
 .assignment-middle-box .button:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+#viewMore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#viewMore .button{
+    background-color:#f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 7px 45px;
+    border-radius: 30px;
+    transition: .4s;
+    width: 173px;
+}
+
+#viewMore .button:hover{
     background-color: transparent;
     border: 2px solid #f9004d;
     cursor: pointer;
