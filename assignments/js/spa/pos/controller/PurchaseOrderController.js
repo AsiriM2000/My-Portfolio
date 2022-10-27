@@ -31,9 +31,9 @@ $("#selectItemCode").click(function () {
     let search = searchItem(code);
     if (search != null) {
         $("#itemDescription").val(search.itemName);
-         $("#qtyOnHand").val(search.qty);
-        console.log(search.qty);
+        $("#qtyOnHand").val(search.qty);
         $("#unitPrice").val(search.unitPrice);
+
     }
 });
 
@@ -52,6 +52,7 @@ $("#addItem").click(function () {
     orders.push(order);
 
     loadAllOrder();
+    qtyItem();
     cleatOrderData();
     itemQtyLoad(itemCode, qty);
 
@@ -139,8 +140,9 @@ function removeItemInOrder() {
 
 // function qtyItem() {
 //     let itemCode = $("#selectItemCode").val();
+//     let qt = $("#qty").val();
 //     let item = searchItem(itemCode);
-//     let manageQty = item.qty - 2;
+//     let manageQty = item.qty - qt;
 //     if (item != null) {
 //         item.qty = manageQty;
 //         loadAllItems();
