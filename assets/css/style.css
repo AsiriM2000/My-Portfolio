@@ -748,3 +748,14 @@ footer p:nth-child(2){
     border: 2px solid #f9004d;
     cursor: pointer;
 }
+
+/*---preloader styles---*/
+.loader-container{
+    width: 100%;
+    height: 100vh;
+    background-color: #111;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
