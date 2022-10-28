@@ -138,16 +138,16 @@ function removeItemInOrder() {
     });
 }
 
-// function qtyItem() {
-//     let itemCode = $("#selectItemCode").val();
-//     let qt = $("#qty").val();
-//     let item = searchItem(itemCode);
-//     let manageQty = item.qty - qt;
-//     if (item != null) {
-//         item.qty = manageQty;
-//         loadAllItems();
-//         return true;
-//     } else {
-//         return false;
-//     }
-// }
+function qtyItem() {
+    let itemCode = $("#selectItemCode").val();
+    let qt = $("#qty").val();
+    let item = searchItem(itemCode);
+    let manageQty = item.qty - qt;
+    if (item != null) {
+        item.qty = manageQty;
+        loadAllItems();
+        return true;
+    } else {
+        return false;
+    }
+}
