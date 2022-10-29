@@ -22,15 +22,10 @@
     <meta content="Asiri" name="owner">
     <meta content="#191919" name="theme-color">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
 </head>
 
 <body>
-
-<!--preloader start-->
-<div class="loader-container">
-    <div class="loader"></div>
-</div>
-
 <!--header element start-->
 <header>
     <section>
@@ -355,6 +350,13 @@
     <p class="end">CopyRight By Asiri Madhusanka</p>
 </footer>
 
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script>
+    $(window).on('load', function () {
+        console.log("Window on load");
+        $(".loader-container").fadeOut(6000);
+    });
+</script>
 </body>
 </html>
 

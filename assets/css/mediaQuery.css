@@ -8,6 +8,12 @@
     .backImage img {
         left: 46%;
     }
+    .basic-middle-box img {
+        height: 150px;
+        width: 140px;
+        border-radius: 10px;
+        transition: transform .4s;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -42,6 +48,18 @@
 
     .content h3 {
         font-size: 20px;
+    }
+
+    .assignment-basic-box {
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: repeat(3,1fr);
+        height: 700px;
+    }
+
+    .basic-middle-box {
+        height: 365px;
+        width: 310px;
     }
 
 }
