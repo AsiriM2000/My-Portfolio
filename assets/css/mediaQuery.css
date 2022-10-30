@@ -61,6 +61,12 @@
         height: 365px;
         width: 310px;
     }
+    .basic-middle-box img {
+        height: 175px;
+        width: 240px;
+        border-radius: 10px;
+        transition: transform .4s;
+    }
 
 }
 
@@ -214,6 +220,13 @@
     tr td {
         padding-top: 50px;
         font-size: 14px;
+    }
+    .assignment-basic-box {
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(2,1fr);
+        height: 1100px;
+        margin-left: 32px;
     }
 }
 
@@ -380,6 +393,10 @@
     #viewMore{
         margin-top: 100px;
     }
+    .assignment-basic-box {
+        display: block;
+        margin-left: 42px;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -446,6 +463,9 @@
     footer p:nth-child(2) {
         width: 356px;
         font-size: 14px;
+    }
+    .assignment-basic-box {
+        margin-left: 18px;
     }
 }
 

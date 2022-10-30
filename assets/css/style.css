@@ -707,6 +707,11 @@ footer p:nth-child(2){
 }
 
 /*---new page css styles---*/
+.assignment-basic{
+    width: 100%;
+    padding: 100px 0px;
+}
+
 .basic-middle-box{
     height: 365px;
     width: 335px;
@@ -732,6 +737,7 @@ footer p:nth-child(2){
     border-radius: 10px;
     transition: transform .4s;
 }
+
 .basic-middle-box .button{
     background-color:#f9004d;
     color: white;
@@ -748,6 +754,7 @@ footer p:nth-child(2){
     border: 2px solid #f9004d;
     cursor: pointer;
 }
+
 .assignment-basic-box{
     display: flex;
     justify-content: center;
