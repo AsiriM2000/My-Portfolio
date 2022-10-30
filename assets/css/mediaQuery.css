@@ -575,4 +575,10 @@
     footer p:nth-child(1) {
         font-size: 36px;
     }
+    .basic-middle-box {
+        width: 260px;
+    }
+    .basic-middle-box img {
+        width: 190px;
+    }
 }
