@@ -397,6 +397,9 @@
         display: block;
         margin-left: 42px;
     }
+    .assignment-basic {
+        height: 305vh;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -581,4 +584,5 @@
     .basic-middle-box img {
         width: 190px;
     }
+
 }
