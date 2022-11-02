@@ -817,7 +817,7 @@ footer p:nth-child(2){
 
 /*---preloader css styles---*/
 #preloader{
-    background: #000;
+    background: #000 url(../img/loader/circle-loader-gif-2.gif) no-repeat center center;
     background-size: 15%;
     height: 100vh;
     width: 100%;
