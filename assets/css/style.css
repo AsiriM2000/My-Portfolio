@@ -761,7 +761,12 @@ footer p:nth-child(2){
     align-items: center;
     height: 400px;
 }
-
+.assignment-animation-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
 .animation-middle-box{
     height: 365px;
     width: 335px;

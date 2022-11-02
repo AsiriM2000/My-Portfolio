@@ -72,6 +72,9 @@
         border-radius: 10px;
         transition: transform .4s;
     }
+    .assignment-animation-box{
+        margin-left: 85px;
+    }
 
 }
 
@@ -231,6 +234,13 @@
         grid-template-rows: repeat(2,1fr);
         grid-template-columns: repeat(2,1fr);
         height: 1100px;
+        margin-left: 32px;
+    }
+    .animation-middle-box{
+        width: 320px;
+        height: 350px;
+    }
+    .assignment-animation-box{
         margin-left: 32px;
     }
 }
