@@ -808,7 +808,12 @@ footer p:nth-child(2){
     border: 2px solid #f9004d;
     cursor: pointer;
 }
-
+.title-animation h2{
+    color: white;
+    font-size: 75px;
+    text-align: center;
+    margin: 30px;
+}
 /*#preloader{*/
 /*    background: #000 url(../img/loader/circle-loader-gif-2.gif) no-repeat center center;*/
 /*    background-size: 15%;*/
