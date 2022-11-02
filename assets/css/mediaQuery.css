@@ -413,11 +413,14 @@
         margin-left: 42px;
     }
     .assignment-basic {
-        height: 305vh;
+        height: 290vh;
     }
     .assignment-animation-box {
         display: block;
         margin-left: 42px;
+    }
+    .title-animation h2{
+        font-size: 50px;
     }
 }
 
@@ -491,6 +494,9 @@
     }
     .assignment-animation-box{
         margin-left: 18px;
+    }
+    .title-animation h2{
+        font-size: 45px;
     }
 }
 
