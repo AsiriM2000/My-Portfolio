@@ -1,0 +1,11 @@
+.body{
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../image/vecteezy_night-city-landscape-with-a-large-planet-on-the-horizon-and_4371966.jpg");
+    background-size: cover;
+}
