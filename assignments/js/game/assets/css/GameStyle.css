@@ -21,6 +21,21 @@
     position: absolute;
 }
 
+#gameIntru{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    margin: auto;
+}
+
+#gameIntru h1{
+    color: white;
+    font-size: 50px;
+}
+
+span{
+    color: #f9004d;
+}
 @media screen and (max-width: 1440px){
     .boy{
         width: 150px;

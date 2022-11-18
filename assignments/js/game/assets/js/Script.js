@@ -2,18 +2,6 @@ let boy = document.getElementById("boy");
 idleImageNumber = 0;
 idleAnimationNumber = 0;
 
-function idleAnimation() {
-
-    idleImageNumber = idleImageNumber + 1;
-    if (idleImageNumber == 3) {
-        idleImageNumber = 1;
-    }
-    boy.src = "assets/image/test/Fly%20(" + idleImageNumber + ").png";
-}
-
-function idleAnimationStart() {
-    idleAnimationNumber = setInterval(idleAnimation, 200);
-}
 
 // flyImageNumber = 0;
 // flyAnimationNumber = 0;
@@ -34,15 +22,29 @@ function idleAnimationStart() {
 // function keyCheck(event){
 //     var keyCode = event.which;
 //
-//   
+//
 // }
+
 function keyCheck(event) {
     var keyCode = event.which;
     if (keyCode == 13) {
+        document.getElementById("gameIntru").style.display = "none";
         if (moveBackgroundAnimationId == 0) {
             moveBackgroundAnimationId = setInterval(moveBackground, 100);
         }
     }
+
+    function idleAnimation() {
+        idleImageNumber = idleImageNumber + 1;
+        if (idleImageNumber == 3) {
+            idleImageNumber = 1;
+        }
+        boy.src = "assets/image/characters/Fly%20(" + idleImageNumber + ").png";
+    }
+
+    idleAnimationNumber = setInterval(idleAnimation, 200);
+
+
 }
 
 var backgroundImagePositionX =0;
