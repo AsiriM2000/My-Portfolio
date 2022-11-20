@@ -1,3 +1,7 @@
+$(document).on('click',"#start>h1",function (){
+    $(".preloader").css("display","none")
+});
+
 let girl = document.getElementById("girl");
 
 breathingImageNumber = 0;
@@ -34,7 +38,6 @@ function runAnimationStart() {
 function keyCheck(event) {
     var keyCode = event.which;
     if (keyCode == 13) {
-        document.getElementById("gameIntru").style.display = "none";
         if (runAnimationNumber == 0) {
             runAnimationStart();
         }

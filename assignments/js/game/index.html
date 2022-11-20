@@ -2,21 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Run Game</title>
+    <title>Adventure Girl</title>
     <link href="../game/assets/css/GameStyle.css" rel="stylesheet">
 </head>
+<div class="preloader">
+    <div id="gameIntru">
+        <h1>Adventure <span>Girl</span></h1>
+        <h2>Game Controllers</h2>
+        <h3>Run Start - Enter Key</h3>
+        <h3>Jump - Up Arrow Key</h3>
+
+        <div id="start">
+            <h1>START</h1>
+        </div>
+    </div>
+</div>
+
 <body class="body" onload="breathingAnimationStart();" onkeypress="keyCheck(event);">
 
 <div class="background" id="background">
-    <div id="gameIntru">
-        <h1>Run <span>Game</span></h1>
-        <h1>Game <span>Start</span> Press<span> Enter</span> Key</h1>
-    </div>
+
     <img src="assets/image/characters/Idle%20(1).png" class="girl" id="girl">
 
 </div>
 
 
+<script src="assets/js/jquery-3.6.1.min.js"></script>
 <script src="assets/js/Script.js"></script>
 
 </body>
