@@ -31,27 +31,26 @@
     position: absolute;
 }
 
-#gameIntru{
+#gameStart{
     position: absolute;
     top: 100px;
     left: 100px;
     margin: auto;
 }
 
-#gameIntru h1{
+#gameStart h1{
     color: white;
     font-size: 70px;
 }
 #gameIntru h2{
-    margin-top: 30px;
     margin-left: 30px;
-    color: white;
+    color: #283747;
     font-size: 50px;
 }
-#gameIntru h3{
+#gameIntru ul>li{
     margin-left: 80px;
-    color: white;
-    font-size: 30px;
+    color: #283747;
+    font-size: 50px;
 }
 #start h1{
     margin-left: 90px;
@@ -73,13 +72,22 @@ span{
 @media screen and (max-width: 1440px){
     .girl{
         width: 150px;
-        top: 300px;
+        top: 440px;
     }
+
 }
 
 @media screen and (max-width: 1024px){
+    .background{
+        width: 100%;
+        height: 100vh;
+        background-repeat: repeat-x;
+        background-size: cover;
+        background-position: center;
+    }
+
     .girl{
         width: 150px;
-        top: 300px;
+        top: 400px;
     }
 }

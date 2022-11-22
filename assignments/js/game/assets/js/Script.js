@@ -35,17 +35,61 @@ function runAnimationStart() {
     clearInterval(breathingAnimationNumber);
 }
 
+jumpImageNumber =1;
+jumpAnimationNumber =0;
+girlMarginTop = 100;
+
+function jumpAnimation(){
+    jumpImageNumber = jumpImageNumber +1;
+
+    if (jumpImageNumber <= 6){
+        girlMarginTop = girlMarginTop -20;
+        girl.style.marginTop = girlMarginTop + "px";
+    }
+
+    if (jumpImageNumber >= 7){
+        girlMarginTop = girlMarginTop + 20;
+        girl.style.marginTop = girlMarginTop +"px";
+    }
+
+    if (jumpImageNumber == 11){
+        jumpImageNumber =1;
+        clearInterval(jumpAnimationNumber);
+        jumpAnimationNumber =0;
+        runAnimationStart();
+    }
+
+    girl.src = "assets/image/characters/Jump%20("+jumpImageNumber+").png"
+}
+
+function jumpAnimationStart(){
+    clearInterval(breathingAnimationNumber);
+    runImageNumber =0;
+    clearInterval(runAnimationNumber);
+    jumpAnimationNumber = setInterval(jumpAnimation,100);
+}
+
 function keyCheck(event) {
     var keyCode = event.which;
     if (keyCode == 13) {
         if (runAnimationNumber == 0) {
             runAnimationStart();
         }
+        document.getElementById("gameIntru").style.display='none';
+        if (moveBackgroundAnimationId == 0) {
+            moveBackgroundAnimationId = setInterval(moveBackground, 100);
+        }
     }
 
-    if (moveBackgroundAnimationId == 0) {
-        moveBackgroundAnimationId = setInterval(moveBackground, 100);
+    if (keyCode == 32){
+        if (jumpAnimationNumber == 0){
+            jumpAnimationStart();
+        }
+        if (moveBackgroundAnimationId == 0) {
+            moveBackgroundAnimationId = setInterval(moveBackground, 100);
+        }
     }
+
 }
 
 
