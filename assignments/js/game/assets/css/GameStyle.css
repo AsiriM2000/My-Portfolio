@@ -81,6 +81,7 @@ span {
     top: 870px;
     background-image: url("../image/barrier/istockphoto-1169356394-170667a-removebg-preview.png");
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 1440px) {

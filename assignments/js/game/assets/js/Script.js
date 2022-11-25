@@ -111,7 +111,7 @@ function moveBackground() {
 barrierMarginLeft = 700;
 
 function barrierBox() {
-    for (var i = 0; i < 1000; i++) {
+    for (var i = 0; i <=1000; i++) {
 
         var box = document.createElement("div");
         box.className = "box";
@@ -119,11 +119,11 @@ function barrierBox() {
         box.style.marginLeft = barrierMarginLeft + "px";
         box.id = "box" + i;
 
-        if (i < 5) {
+        if (i < 500) {
             barrierMarginLeft = barrierMarginLeft + 500;
         }
 
-        if (i >= 5) {
+        if (i > 500) {
             barrierMarginLeft = barrierMarginLeft + 500;
         }
     }
@@ -132,7 +132,7 @@ function barrierBox() {
 var barrierAnimationId =0;
 
 function barrierAnimation(){
-    for (var i =0; i<10; i++){
+    for (var i =0; i<1000; i++){
         var box = document.getElementById("box" + i);
         var currentMarginLeft = getComputedStyle(box).marginLeft;
         var newMarginLeft = parseInt(currentMarginLeft) -25;
