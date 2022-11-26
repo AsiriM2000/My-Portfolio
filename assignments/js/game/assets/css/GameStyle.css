@@ -25,11 +25,8 @@
 }
 
 .girl {
-    width: 200px;
-    top: 680px;
-    left: 100px;
-    bottom: 0;
-    margin: auto;
+    width: 180px;
+    margin-top: 790px;
     position: absolute;
 }
 
@@ -75,34 +72,12 @@ span {
 }
 
 .box {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 80px;
     position: absolute;
-    top: 870px;
+    top: 880px;
     background-image: url("../image/barrier/istockphoto-1169356394-170667a-removebg-preview.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 1440px) {
-    .girl {
-        width: 150px;
-        top: 440px;
-    }
-
-}
-
-@media screen and (max-width: 1024px) {
-    .background {
-        width: 100%;
-        height: 100vh;
-        background-repeat: repeat-x;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .girl {
-        width: 150px;
-        top: 400px;
-    }
-}

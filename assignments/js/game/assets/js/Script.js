@@ -37,18 +37,18 @@ function runAnimationStart() {
 
 jumpImageNumber = 1;
 jumpAnimationNumber = 0;
-girlMarginTop = 100;
+girlMarginTop = 790;
 
 function jumpAnimation() {
     jumpImageNumber = jumpImageNumber + 1;
 
     if (jumpImageNumber <= 6) {
-        girlMarginTop = girlMarginTop - 20;
+        girlMarginTop = girlMarginTop - 30;
         girl.style.marginTop = girlMarginTop + "px";
     }
 
     if (jumpImageNumber >= 7) {
-        girlMarginTop = girlMarginTop + 20;
+        girlMarginTop = girlMarginTop + 30;
         girl.style.marginTop = girlMarginTop + "px";
     }
 
@@ -56,6 +56,7 @@ function jumpAnimation() {
         jumpImageNumber = 1;
         clearInterval(jumpAnimationNumber);
         jumpAnimationNumber = 0;
+        runImageNumber=0;
         runAnimationStart();
     }
 
@@ -75,12 +76,11 @@ function keyCheck(event) {
         if (runAnimationNumber == 0) {
             runAnimationStart();
         }
-        document.getElementById("gameIntru").style.display = 'none';
         if (moveBackgroundAnimationId == 0) {
             moveBackgroundAnimationId = setInterval(moveBackground, 100);
         }
-        if (barrierAnimationId == 0){
-            barrierAnimationId =setInterval(barrierAnimation, 100);
+        if (barrierAnimationId == 0) {
+            barrierAnimationId = setInterval(barrierAnimation, 100);
         }
     }
 
@@ -91,8 +91,8 @@ function keyCheck(event) {
         if (moveBackgroundAnimationId == 0) {
             moveBackgroundAnimationId = setInterval(moveBackground, 100);
         }
-        if (barrierAnimationId == 0){
-            barrierAnimationId =setInterval(barrierAnimation, 100);
+        if (barrierAnimationId == 0) {
+            barrierAnimationId = setInterval(barrierAnimation, 100);
         }
     }
 
@@ -108,10 +108,10 @@ function moveBackground() {
     document.getElementById("background").style.backgroundPositionX = backgroundImagePositionX + "px";
 }
 
-barrierMarginLeft = 700;
+barrierMarginLeft = 1540;
 
 function barrierBox() {
-    for (var i = 0; i <=1000; i++) {
+    for (var i = 0; i <= 10; i++) {
 
         var box = document.createElement("div");
         box.className = "box";
@@ -119,23 +119,40 @@ function barrierBox() {
         box.style.marginLeft = barrierMarginLeft + "px";
         box.id = "box" + i;
 
-        if (i < 500) {
-            barrierMarginLeft = barrierMarginLeft + 500;
+        if (i < 5) {
+            barrierMarginLeft = barrierMarginLeft + 2000;
         }
 
-        if (i > 500) {
-            barrierMarginLeft = barrierMarginLeft + 500;
+        if (i > 5) {
+            barrierMarginLeft = barrierMarginLeft + 1000;
         }
     }
 }
 
-var barrierAnimationId =0;
+var barrierAnimationId = 0;
 
-function barrierAnimation(){
-    for (var i =0; i<1000; i++){
+function barrierAnimation() {
+    for (var i = 0; i < 10; i++) {
         var box = document.getElementById("box" + i);
         var currentMarginLeft = getComputedStyle(box).marginLeft;
-        var newMarginLeft = parseInt(currentMarginLeft) -25;
+        var newMarginLeft = parseInt(currentMarginLeft) - 35;
         box.style.marginLeft = newMarginLeft + "px";
+
+
+        if (newMarginLeft >= -110 & newMarginLeft <= 100) {
+            if (girlMarginTop > 740) {
+                clearInterval(barrierAnimationId);
+
+                clearInterval(runAnimationNumber);
+                runAnimationNumber = -1;
+
+                clearInterval(jumpAnimationNumber);
+                jumpAnimationNumber = -1;
+
+                clearInterval(moveBackgroundAnimationId);
+                moveBackgroundAnimationId = -1;
+            }
+        }
     }
 }
+
