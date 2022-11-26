@@ -151,8 +151,19 @@ function barrierAnimation() {
 
                 clearInterval(moveBackgroundAnimationId);
                 moveBackgroundAnimationId = -1;
+
+                deadAnimationNumber = setInterval(girlDeadAnimation,100);
             }
         }
     }
 }
 
+deadImageNumber = 1;
+deadAnimationNumber =0;
+function girlDeadAnimation(){
+    deadImageNumber = deadImageNumber +1;
+    if (deadImageNumber == 11){
+        deadImageNumber =  10;
+    }
+    girl.src = "assets/image/characters/Dead%20("+deadImageNumber+").png"
+}
