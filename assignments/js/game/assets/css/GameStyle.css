@@ -19,7 +19,6 @@
     background-image: url("../image/bk/desert-landscape-with-cactuses-and-mountains-on-skyline-vector.jpg");
     background-repeat: repeat-x;
     overflow-x: hidden;
-    background-size: cover;
     background-position: center;
     position: absolute;
 }
@@ -27,6 +26,7 @@
 .girl {
     width: 160px;
     margin-top: 790px;
+    margin-left: 50px;
     position: absolute;
 }
 
@@ -72,12 +72,19 @@ span {
 }
 
 .box {
-    width: 80px;
-    height: 80px;
+    width: 140px;
+    height: 140px;
     position: absolute;
-    top: 880px;
+    top: 820px;
     background-image: url("../image/barrier/istockphoto-1169356394-170667a-removebg-preview.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
 
+.score{
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 20px;
+    position: absolute;
+}

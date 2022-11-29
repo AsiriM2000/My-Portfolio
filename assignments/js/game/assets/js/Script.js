@@ -43,12 +43,12 @@ function jumpAnimation() {
     jumpImageNumber = jumpImageNumber + 1;
 
     if (jumpImageNumber <= 6) {
-        girlMarginTop = girlMarginTop - 30;
+        girlMarginTop = girlMarginTop - 35;
         girl.style.marginTop = girlMarginTop + "px";
     }
 
     if (jumpImageNumber >= 7) {
-        girlMarginTop = girlMarginTop + 30;
+        girlMarginTop = girlMarginTop + 35;
         girl.style.marginTop = girlMarginTop + "px";
     }
 
@@ -101,11 +101,15 @@ function keyCheck(event) {
 
 var backgroundImagePositionX = 0;
 var moveBackgroundAnimationId = 0;
+var score =0;
 
 function moveBackground() {
 
     backgroundImagePositionX = backgroundImagePositionX - 20;
     document.getElementById("background").style.backgroundPositionX = backgroundImagePositionX + "px";
+
+    score = score +1;
+    document.getElementById("score").innerHTML = score;
 }
 
 barrierMarginLeft = 1540;
@@ -139,8 +143,8 @@ function barrierAnimation() {
         box.style.marginLeft = newMarginLeft + "px";
 
 
-        if (newMarginLeft >= -110 & newMarginLeft <= 100) {
-            if (girlMarginTop > 740) {
+        if (newMarginLeft >= -120 & newMarginLeft <= 100) {
+            if (girlMarginTop > 760) {
                 clearInterval(barrierAnimationId);
 
                 clearInterval(runAnimationNumber);
