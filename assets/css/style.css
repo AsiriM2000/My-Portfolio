@@ -36,6 +36,12 @@
     cursor: pointer;
     transition: transform .4s;
 }
+.hero button>a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
 
 .hero button:hover{
     transform: scale(1.2);
